@@ -27,8 +27,10 @@
 \documentclass[10pt]{article} % Font size, can be: 10pt, 11pt or 12pt
 \usepackage{xeCJK}
 
+\def\CPP{{C\nolinebreak[4]\hspace{-.05em}\raisebox{.4ex}{\tiny\bf ++}}}
 \newfontfamily{\fzblack}{fzlthjt.TTF}
 \newfontfamily{\fzybxs}{fzybxs.ttf}
+\newcommand{\IF}[1]{\textcolor{Maroon}{(IF = #1)}}
 \input{structure.tex} % Include the file that specifies the document structure
 
 % Headers and footers can be added with the \lhead{} \rhead{} \lfoot{} \rfoot{} commands
@@ -49,7 +51,7 @@
 		\vspace{-0.04\textheight} % Reduce whitespace above the parbox to separate it from the main content
 		\centering % Centre text
 		{\Huge \fzblack 侯 璐}\\\medskip % Your name
-		{\Huge\color{headings}{\fzybxs \textit{侯 璐}}}
+		{\Huge\color{headings}\cvtextfont Curriculum Vitae}
 	}
 	
 	%----------------------------------------------------------------------------------------
@@ -58,7 +60,7 @@
 	\fzblack
 	\section{博士研究}
 	
-	{\raggedright\textbf{博士研究：``面向车联网的移动云网络资源管理与优化研究"，来自``\textit{国家自然科学基金项目}''}\\\medskip}
+	{\raggedright\textbf{博士题目：``面向车联网的移动云网络资源管理与优化研究''，来自``\textit{国家自然科学基金项目}''}\\\medskip}
 	
 	My research examined the use of ELW pulses from a mode-locked source array inducted through transuranic crystals to observe entanglement on supraquantum structures. Theoretical advancements included prediction of quantum resonance phenomena including the possibility of resonance cascades. I was motivated to conduct this doctoral research due to my passion for teleportation of matter and I believe I have laid the foundation for further experimental validation and development of practical outcomes.
 	
@@ -172,9 +174,13 @@
 				\raisebox{-1pt}{\faHome} & 北京市海淀区西土城路10号 \\ % Address
 				\raisebox{-1pt}{\faPhone} & +86-15501081468 \\ % Phone number
 				\raisebox{0pt}{\small\faEnvelope} & \href{mailto:houlu8674@bupt.edu.cn}{houlu8674@bupt.edu.cn} \\ % Email address
-				\raisebox{-1pt}{\small\faDesktop} & \href{http://www.lucima.cn}{http://www.lucima.cn} \\ % Website
+				\raisebox{-1pt}{\small\faDesktop} & \href{https://www.lucima.cn}{https://www.lucima.cn} \\ % Website
 				\raisebox{-1pt}{\faGithub} & \href{https://github.com/houluy}{https://github.com/houluy} \\ % GitHub profile
 				\raisebox{-1pt}{\faLinkedinSquare} & \href{https://www.linkedin.com/in/houlu}{https://www.linkedin.com/in/houlu} \\ % LinkedIn profile
+				\raisebox{-1pt}{\faWechat} &
+				guaguade \\
+				\raisebox{-1pt}{\faWeibo} &
+				\href{http://weibo.com/lucima}{astroooooo} \\
 				% See fontawesome.pdf in the fonts folder for all icons you can use
 			\end{supertabular}
 		}
@@ -205,7 +211,7 @@
 		\educationentry{2014 -- 2019} % Duration
 		{工学博士} % Degree
 		{} % Honours, achievements or distinctions (e.g. first class honours)
-		{信息与通信工程学院} % Department
+		{智能计算与通信实验室} % Department
 		{北京邮电大学} % Institution
 		
 		%------------------------------------------------
@@ -270,17 +276,15 @@
 		
 		%------------------------------------------------
 		
-		\tableentry{Beginner}{Java, MS DOS}{spaceafter}
+		\tableentry{精通}{Python, Node.js}{spaceafter}
 		
 		%------------------------------------------------
 		
-		\tableentry{Intermediate}{Javascript, Python, HTML, CSS,}{}
-		\tableentry{}{Microsoft Windows}{}
-		\tableentry{}{Computer Hardware \& Support}{spaceafter}
+		\tableentry{熟悉}{C, \CPP, MATLAB, \LaTeX}{spaceafter}
 		
 		%------------------------------------------------
 		
-		\tableentry{Expert}{Perl, Unix, \LaTeX}{spaceafter}
+		\tableentry{了解}{Go, Rust}{spaceafter}
 		
 		%------------------------------------------------
 		
@@ -290,7 +294,7 @@
 	%	COMMUNICATION SKILLS
 	%----------------------------------------------------------------------------------------
 	
-	\section{Communication Skills}
+	\section{沟通}
 	
 	% Example \tableentry{} command to add another line:
 	
@@ -305,8 +309,7 @@
 		
 		%------------------------------------------------
 		
-		\tableentry{Conferences}{Oral Presentation at the Annual MIT}{}
-		\tableentry{}{Theoretical Physics Conference -- 1987}{spaceafter}
+		\tableentry{}{}{spaceafter}
 		
 		%------------------------------------------------
 		
@@ -321,7 +324,7 @@
 	%	SKILLS DESCRIPTION
 	%----------------------------------------------------------------------------------------
 	
-	\section{Skills}
+	\section{技能}
 	
 	% Example \longformdescription{} command to add another section:
 	
@@ -339,7 +342,7 @@
 	%	PUBLICATIONS
 	%----------------------------------------------------------------------------------------
 	
-	\section{Publications}
+	\section{已发表论文}
 	
 	% Example \longformdescription{} command to add another publication:
 	
@@ -347,9 +350,20 @@
 	
 	%------------------------------------------------
 	
-	\longformpublication{\textbf{Freeman, G. R.} (1996). Chemistry of Multiply Charged Negative Molecular Ions and Clusters in the Gas Phase:  Terrestrial and in Intense Galactic Magnetic Fields. \textit{The Journal of Physical Chemistry}, \textit{100}(11), 4331-4338.}
+	\longformpublication{Kan Zheng, \textbf{Lu Hou}, Hanling Meng, Qiang Zheng, Ning Lu, Lei Lei, ``Soft-defined heterogeneous vehicular network: architecture and challenges,'' \textit{IEEE Network}, vol. 30, no. 4, July 2016, pp. 72-80.\IF{7.23}}
 	
-	\longformpublication{Jacobsen, F. M., Gee, N., \textbf{Freeman, G. R.} (1986). Electron mobility in liquid krypton as function of density, temperature, and electric field strength. \textit{Physical Review A}, \textit{34}(3): 2329-2335.}
+	\longformpublication{\textbf{Lu Hou}, Shaohang Zhao, Xiong Xiong, Kan Zheng, Periklis Chatzimisios, M. Shamim Hossain, Wei Xiang, ``Internet of things cloud: architecture and implementation,'' \textit{IEEE Communications Magazine}, vol. 54, no. 12, Dec. 2016, pp. 32-39. \IF{10.435}}
+	
+	\longformpublication{\textbf{Lu Hou}, Shaohang Zhao, Xing Li, Periklis Chatzimisios, Kan Zheng, ``Design and implementation of application programming interface for Internet of things cloud,'' \textit{International Journal of Network Management}, vol. 27, no. 3, June 2016. \IF{1.118}}
+	
+	\longformpublication{\textbf{Lu Hou}, Kan Zheng, Periklis Chatzimisios, Yi Feng, ``A continuous-time Markov decision process-based resource allocation scheme in vehicular cloud for mobile video services,'' \textit{Computer Communications}, vol. 118, Mar. 2018, pp. 140-147. \IF{3.338}}
+		
+	\longformpublication{\textbf{Lu Hou}, Lei Lei, Kan Zheng, ``Design on publish/subscribe message dissemination for vehicular networks with mobile edge computing,'' \textit{2017 IEEE GLOBECOM}, Dec. 2017}
+	
+	\longformpublication{Xiong Xiong, \textbf{Lu Hou}, Kan Zheng, Wei Xiang, M. Shamim Hossain, and Sk Md Mizanur Rahman, ``SMDP-based radio resource allocation scheme in software-defined internet of things networks,'' \textit{IEEE Sensors Journal} vol. 16, no. 20, June 2016, pp. 7304-7314. \IF{2.512}}
+				
+	\longformpublication{Xiong Xiong, \textbf{Lu Hou}, Long Zhao, ``A Group-Based Massive Multiple Access Scheme in Cellular M2M Networks,'' \textit{Computer Communications}, vol. 121, May. 2018, pp. 44-49. \IF{3.338}}
+						
 	
 	%------------------------------------------------
 	
@@ -382,8 +396,6 @@
 		
 		%------------------------------------------------
 		
-		& \textit{First author publications in} \textbf{bold}\\
-		
 		%------------------------------------------------
 		
 	\end{supertabular}
@@ -395,6 +407,7 @@
 \end{paracol}
 
 %----------------------------------------------------------------------------------------
+\newpage
 
 \begin{paracol}{2} % Begin the multi-column environment
 
@@ -405,7 +418,7 @@
 \parbox[top][0.12\textheight][c]{\linewidth}{ % Parbox to hold the author name and CV text; fixed height to match the coloured box to the right, centred vertically and full line width
 	\vspace{-0.04\textheight} % Reduce whitespace above the parbox to separate it from the main content
 	\centering % Centre text
-	{\sffamily\Huge Dr. Gordon Freeman}\\\medskip % Your name
+	{\sffamily\Huge Lu Hou}\\\medskip % Your name
 	{\Huge\color{headings}\cvtextfont Curriculum Vitae}
 }
 
@@ -415,7 +428,7 @@
 
 \section{Doctoral Research}
 
-{\raggedright\textbf{``Observation of Einstein-Podolsky-Rosen Entanglement on Supraquantum Structures by Induction Through Nonlinear Transuranic Crystal of Extremely Long Wavelength Pulse from Mode-Locked Source Array"}\\\medskip}
+{\raggedright\textbf{``Research on Resource Management and Optimization of Mobile Cloud Networks for Internet of Vehicles"}\\\medskip}
 
 My research examined the use of ELW pulses from a mode-locked source array inducted through transuranic crystals to observe entanglement on supraquantum structures. Theoretical advancements included prediction of quantum resonance phenomena including the possibility of resonance cascades. I was motivated to conduct this doctoral research due to my passion for teleportation of matter and I believe I have laid the foundation for further experimental validation and development of practical outcomes.
 
@@ -469,50 +482,50 @@ My research examined the use of ELW pulses from a mode-locked source array induc
 %	REFERENCES
 %----------------------------------------------------------------------------------------
 
-\section{References}
-
-%\textit{References available on request}
-
-%------------------------------------------------
-
-% Example \tableentry{} command to add another line:
-
-%\tableentry{Heading}{Content}{spaceafter}
-
-% All 3 parameters must be supplied but any can be empty if you don't need them
-% A "spaceafter" value in the third parameter will add some vertical space -- this is to be used between headings
-
-%------------------------------------------------
-
-\begin{supertabular}{rl} % Start a table with two columns, the table will ensure everything is aligned
-	
-	%------------------------------------------------
-	
-	\tableentry{}{\textbf{Dr. Isaac Kleiner}}{spaceafter}
-	\tableentry{Position}{Professor}{}
-	\tableentry{Employer}{\href{http://web.mit.edu/physics/}{Department of Physics}}{}
-	\tableentry{}{\href{https://web.mit.edu}{\textit{Massachusetts Institute of Technology}}}{spaceafter}
-	\tableentry{Phone}{+1 (617) 253 1000 x5322 (Work)}{}
-	\tableentry{Mobile}{+1 (232) 842-3583}{}
-	
-	%------------------------------------------------
-	
-	\tableentry{}{}{} % Creates some additional whitespace between the references
-	
-	%------------------------------------------------
-	
-	\tableentry{}{\textbf{Dr. Eli Vance}}{spaceafter}
-	\tableentry{Position}{Scientist (HL1)}{}
-	\tableentry{Employer}{\href{http://www.bmrf.us}{Black Mesa Research Facility}}{spaceafter}
-	\tableentry{Email}{\href{mailto:e.vance@bmrf.us}{e.vance@bmrf.us}}{}
-	\tableentry{Phone}{+1 (800) 786-1410 x6235 (Work)}{}
-	\tableentry{Mobile}{+1 (201) 632-3901}{}
-	
-	%------------------------------------------------
-	
-\end{supertabular}
-
-\medskip % Extra whitespace before the next section
+%\section{References}
+%
+%%\textit{References available on request}
+%
+%%------------------------------------------------
+%
+%% Example \tableentry{} command to add another line:
+%
+%%\tableentry{Heading}{Content}{spaceafter}
+%
+%% All 3 parameters must be supplied but any can be empty if you don't need them
+%% A "spaceafter" value in the third parameter will add some vertical space -- this is to be used between headings
+%
+%%------------------------------------------------
+%
+%\begin{supertabular}{rl} % Start a table with two columns, the table will ensure everything is aligned
+%	
+%	%------------------------------------------------
+%	
+%	\tableentry{}{\textbf{Dr. Isaac Kleiner}}{spaceafter}
+%	\tableentry{Position}{Professor}{}
+%	\tableentry{Employer}{\href{http://web.mit.edu/physics/}{Department of Physics}}{}
+%	\tableentry{}{\href{https://web.mit.edu}{\textit{Massachusetts Institute of Technology}}}{spaceafter}
+%	\tableentry{Phone}{+1 (617) 253 1000 x5322 (Work)}{}
+%	\tableentry{Mobile}{+1 (232) 842-3583}{}
+%	
+%	%------------------------------------------------
+%	
+%	\tableentry{}{}{} % Creates some additional whitespace between the references
+%	
+%	%------------------------------------------------
+%	
+%	\tableentry{}{\textbf{Dr. Eli Vance}}{spaceafter}
+%	\tableentry{Position}{Scientist (HL1)}{}
+%	\tableentry{Employer}{\href{http://www.bmrf.us}{Black Mesa Research Facility}}{spaceafter}
+%	\tableentry{Email}{\href{mailto:e.vance@bmrf.us}{e.vance@bmrf.us}}{}
+%	\tableentry{Phone}{+1 (800) 786-1410 x6235 (Work)}{}
+%	\tableentry{Mobile}{+1 (201) 632-3901}{}
+%	
+%	%------------------------------------------------
+%	
+%\end{supertabular}
+%
+%\medskip % Extra whitespace before the next section
 
 %----------------------------------------------------------------------------------------
 
@@ -526,12 +539,16 @@ My research examined the use of ELW pulses from a mode-locked source array induc
 	\vspace{-0.04\textheight} % Reduce whitespace above the parbox to separate it from the main content
 	\colorbox{shade}{ % Create the coloured box
 		\begin{supertabular}{p{0.05\linewidth}|p{0.775\linewidth}} % Start a table with two columns, the table will ensure everything is aligned
-			\raisebox{-1pt}{\faHome} & P.O. Box 3985, Black Mesa Drive, NM 87545 \\ % Address
-			\raisebox{-1pt}{\faPhone} & +1 (800) 786-1410 \\ % Phone number
-			\raisebox{0pt}{\small\faEnvelope} & \href{mailto:g.freeman@bmrf.us}{g.freeman@bmrf.us} \\ % Email address
-			\raisebox{-1pt}{\small\faDesktop} & \href{https://www.LaTeXTemplates.com}{https://www.LaTeXTemplates.com} \\ % Website
-			%\raisebox{-1pt}{\faGithub} & \href{https://github.com/username}{https://github.com/username} \\ % GitHub profile
-			%\raisebox{-1pt}{\faLinkedinSquare} & \href{https://www.linkedin.com/in/username}{https://www.linkedin.com/in/username} \\ % LinkedIn profile
+			\raisebox{-1pt}{\faHome} & No. 10, Xitucheng Road, Haidian District, Beijing \\ % Address
+			\raisebox{-1pt}{\faPhone} & +86-15501081468 \\ % Phone number
+			\raisebox{0pt}{\small\faEnvelope} & \href{mailto:houlu8674@bupt.edu.cn}{houlu8674@bupt.edu.cn} \\ % Email address
+			\raisebox{-1pt}{\small\faDesktop} & \href{https://www.lucima.cn}{https://www.lucima.cn} \\ % Website
+			\raisebox{-1pt}{\faGithub} & \href{https://github.com/username}{https://github.com/username} \\ % GitHub profile
+			\raisebox{-1pt}{\faLinkedinSquare} & \href{https://www.linkedin.com/in/username}{https://www.linkedin.com/in/username} \\ % LinkedIn profile
+			\raisebox{-1pt}{\faWechat} &
+			guaguade\\
+			\raisebox{-1pt}{\faWeibo} &
+			\href{http://weibo.com/lucima}{astroooooo}\\
 			% See fontawesome.pdf in the fonts folder for all icons you can use
 		\end{supertabular}
 	}
