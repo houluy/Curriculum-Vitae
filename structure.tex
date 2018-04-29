@@ -138,6 +138,13 @@ SmallCapsFont=*-SC.ttf
 	\expandafter\ifstrequal\expandafter{#5}{}{}{& \textit{#5}\\[6pt]} % Institution
 }
 
+\newcommand{\directionentry}[5]{
+	\textsc{#1} & \textbf{#2}\\ % Duration and degree
+	\expandafter\ifstrequal\expandafter{#3}{}{}{& {\small\textsc{#3}}\\} % Honours, achievements or distinctions (e.g. first class honours)
+	\expandafter\ifstrequal\expandafter{#4}{}{}{& #4\\} % Department
+	\expandafter\ifstrequal\expandafter{#5}{}{}{& \textit{#5}\\[6pt]} % Institution
+}
+
 % Command for entering a separate table row -- used as a generic visual element for any section that uses a two column table
 \newcommand{\tableentry}[3]{
 	\textsc{#1} & #2\expandafter\ifstrequal\expandafter{#3}{}{\\}{\\[6pt]} % First the heading, then content, then a conditional insertion of whitespace if the third parameter has any content in it
@@ -151,7 +158,7 @@ SmallCapsFont=*-SC.ttf
 
 % Command for entering a publication in long-form format
 \newcommand{\longformpublication}[1]{
-	#1\medskip
+	#1
 }
 
 % Command for entering a publication as a short DOI (digital object identifier) string to the publication, a link is automatically created

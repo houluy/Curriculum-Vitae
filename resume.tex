@@ -1,0 +1,761 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Freeman Curriculum Vitae
+% XeLaTeX Template
+% Version 2.0 (19/3/2018)
+%
+% This template originates from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Vel (vel@LaTeXTemplates.com)
+% Alessandro Plasmati
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%!TEX program = xelatex
+% NOTICE: This template must be compiled with XeLaTeX, the line above should
+% ensure this happens automatically but if it doesn't you will need to specify 
+% XeLaTeX as the engine in your editor or script
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[10pt]{article} % Font size, can be: 10pt, 11pt or 12pt
+\usepackage{xeCJK}
+\usepackage{graphicx}
+\usepackage{enumitem}
+
+\graphicspath{{logos/}}
+
+\def\CPP{{C\nolinebreak[4]\hspace{-.05em}\raisebox{.4ex}{\tiny\bf ++}}}
+%\newfontfamily{\fzblack}{fzlthjt.TTF}
+%\newCJKfontfamily{\fzybxs}{fzybxs.ttf}
+\newcommand{\email}{houlu8674@bupt.edu.cn}
+\newcommand{\website}{https://www.houlu.me}
+\newcommand{\github}{https://github.com/houluy}
+\newcommand{\linkedin}{https://www.linkedin.com/in/houlu}
+\newcommand{\wechat}{guaguade}
+\newcommand{\weibosite}{http://weibo.com/lucima}
+\newcommand{\weibo}{astroooooo}
+\newcommand{\IF}[1]{\textcolor{Maroon}{(IF = #1)}}
+\setCJKmainfont{fzlthjt.TTF}
+\input{structure.tex} % Include the file that specifies the document structure
+
+% Headers and footers can be added with the \lhead{} \rhead{} \lfoot{} \rfoot{} commands
+% Example right footer:
+%\rfoot{\color{headings}{\sffamily Last update: \today. Typeset with Xe\LaTeX}}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\begin{paracol}{2} % Begin the multi-column environment
+	
+	%----------------------------------------------------------------------------------------
+	%	NAME AND CURRICULUM VITAE TEXT
+	%----------------------------------------------------------------------------------------
+	
+	\parbox[top][0.12\textheight][c]{\linewidth}{ % Parbox to hold the author name and CV text; fixed height to match the coloured box to the right, centred vertically and full line width
+		\vspace{-0.04\textheight} % Reduce whitespace above the parbox to separate it from the main content
+		\centering % Centre text
+		{\Huge 侯 璐}\\\medskip % Your name
+		{\Huge\color{headings}\cvtextfont Curriculum Vitae}
+	}
+	
+	%----------------------------------------------------------------------------------------
+	%	MAJOR RESEARCH PROJECT
+	%----------------------------------------------------------------------------------------
+	\section{博士研究}
+	
+	{\raggedright\textbf{``面向车联网的移动云网络资源管理与优化研究''，来自``\textit{国家自然科学基金项目}''}\\\medskip}
+	
+	My research examined the use of ELW pulses from a mode-locked source array inducted through transuranic crystals to observe entanglement on supraquantum structures. Theoretical advancements included prediction of quantum resonance phenomena including the possibility of resonance cascades. I was motivated to conduct this doctoral research due to my passion for teleportation of matter and I believe I have laid the foundation for further experimental validation and development of practical outcomes.
+	
+	\medskip % Extra whitespace before the next section
+	
+	%----------------------------------------------------------------------------------------
+	%	WORK EXPERIENCE
+	%----------------------------------------------------------------------------------------
+	
+	\section{项目经历}
+	
+	% Blank \workposition command to add another job:
+	
+	%\workposition{} % Duration
+	%{} % FT/PT (full time or part time)
+	%{} % Employer
+	%{} % Job title
+	%{} % Description
+	
+	% All 5 parameters must be supplied but any can be empty if you don't need them
+	
+	%------------------------------------------------
+	
+	\workposition{Current, from Jan 1995} % Duration
+	{FT} % FT/PT (full time or part time)
+	{Black Mesa Research Facility} % Employer
+	{Team Leader (Anomalous Materials)} % Job title
+	{As part of this promotion, I began conducting nuclear and subatomic research in the Anomalous Materials department. My team and I are particularly interested in dimensionality and its interaction with spacetime. The focus is on practical outcomes and applications in teleportation and communication with distal locations.} % Description
+	
+	%------------------------------------------------
+	
+	\workposition{Feb 1991 -- Jan 1995} % Duration
+	{FT} % FT/PT (full time or part time)
+	{Black Mesa Research Facility} % Employer
+	{Level 3 Research Associate} % Job title
+	{This position involved transitioning from purely theoretical work to experimental applications utilising the immense resources of Black Mesa. The transition required an initial learning curve in hazard containment, health and safety procedures and operating experimental infrastructure. Manipulating valves, carts, buttons, levers, etc considerably increased my physical fitness.}  % Description
+	
+	%------------------------------------------------
+	
+	\workposition{Jul 1982 -- Dec 1984} % Duration
+	{PT} % FT/PT (full time or part time)
+	{WashPests Limited} % Employer
+	{Pest Control Technician} % Job title
+	{In this summer job I was tasked with helping eradicate pests from industrial areas. Work involved setting traps, spraying and physical eradication. I received praise for reaching difficult areas and my innovative use of a crowbar to assist in my work.} % Description
+	
+	%------------------------------------------------
+	
+	\vspace{-\baselineskip}\medskip % Standardise the whitespace after this section and before the next (the custom command adds too much otherwise)
+	
+	%----------------------------------------------------------------------------------------
+	%	REFERENCES
+	%----------------------------------------------------------------------------------------
+	
+	%\section{个人简介}
+	%
+	%%\textit{References available on request}
+	%
+	%%------------------------------------------------
+	%
+	%% Example \tableentry{} command to add another line:
+	%
+	%%\tableentry{Heading}{Content}{spaceafter}
+	%
+	%% All 3 parameters must be supplied but any can be empty if you don't need them
+	%% A "spaceafter" value in the third parameter will add some vertical space -- this is to be used between headings
+	%
+	%%------------------------------------------------
+	%
+	%\begin{supertabular}{rl} % Start a table with two columns, the table will ensure everything is aligned
+	%	
+	%	%------------------------------------------------
+	%	
+	%	\tableentry{}{\textbf{}}{spaceafter}
+	%	\tableentry{学位}{}{博士}
+	%	%\tableentry{Employer}{\href{http://web.mit.edu/physics/}{Department of Physics}}{}
+	%	\tableentry{}{\href{https://web.mit.edu}{\textit{Massachusetts Institute of Technology}}}{spaceafter}
+	%	\tableentry{Phone}{+1 (617) 253 1000 x5322 (Work)}{}
+	%	\tableentry{Mobile}{+1 (232) 842-3583}{}
+	%	
+	%	%------------------------------------------------
+	%	
+	%	\tableentry{}{}{} % Creates some additional whitespace between the references
+	%	
+	%	%------------------------------------------------
+	%	
+	%	\tableentry{}{\textbf{Dr. Eli Vance}}{spaceafter}
+	%	\tableentry{Position}{Scientist (HL1)}{}
+	%	\tableentry{Employer}{\href{http://www.bmrf.us}{Black Mesa Research Facility}}{spaceafter}
+	%	\tableentry{Email}{\href{mailto:e.vance@bmrf.us}{e.vance@bmrf.us}}{}
+	%	\tableentry{Phone}{+1 (800) 786-1410 x6235 (Work)}{}
+	%	\tableentry{Mobile}{+1 (201) 632-3901}{}
+	%	
+	%	%------------------------------------------------
+	%	
+	%\end{supertabular}
+	
+	\medskip % Extra whitespace before the next section
+	
+	%----------------------------------------------------------------------------------------
+	
+	\switchcolumn % Switch to the next paracol column
+	
+	%----------------------------------------------------------------------------------------
+	%	COLOURED CONTACT DETAILS BOX
+	%----------------------------------------------------------------------------------------
+	
+	\parbox[top][0.12\textheight][c]{\linewidth}{ % Parbox to hold the colour box; fixed height to match the name/CV text to the left, centred vertically and full line width
+		\vspace{-0.04\textheight} % Reduce whitespace above the parbox to separate it from the main content
+		\colorbox{shade}{ % Create the coloured box
+			\begin{supertabular}{p{0.05\linewidth}|p{0.775\linewidth}} % Start a table with two columns, the table will ensure everything is aligned
+				\raisebox{-1pt}{\faHome} & 北京市海淀区西土城路10号 \\ % Address
+				\raisebox{-1pt}{\faPhone} & +86-15501081468 \\ % Phone number
+				\raisebox{0pt}{\small\faEnvelope} & \href{mailto:\email}{\email} \\ % Email address
+				\raisebox{-1pt}{\small\faDesktop} & \href{\website}{\website} \\ % Website
+				\raisebox{-1pt}{\faGithub} & \href{\github}{\github} \\ % GitHub profile
+				\raisebox{-1pt}{\faLinkedinSquare} & \href{\linkedin}{\linkedin} \\ % LinkedIn profile
+				\raisebox{-1pt}{\faWechat} &
+				\wechat \\
+				\raisebox{-1pt}{\faWeibo} &
+				\href{\weibosite}{\weibo} \\
+				% See fontawesome.pdf in the fonts folder for all icons you can use
+			\end{supertabular}
+		}
+	}
+	
+	%----------------------------------------------------------------------------------------
+	%	EDUCATION
+	%----------------------------------------------------------------------------------------
+	
+	\section{教育经历} 
+	
+	% Blank \educationentry{} command to add another degree:
+	
+	%\educationentry{} % Duration
+	%{} % Degree
+	%{} % Honours, achievements or distinctions (e.g. first class honours)
+	%{} % Department
+	%{} % Institution
+	
+	% All 5 parameters must be supplied but any can be empty if you don't need them
+	
+	%------------------------------------------------
+	
+	\begin{supertabular}{rl} % Start a table with two columns, the table will ensure everything is aligned
+		
+		%------------------------------------------------
+		
+		\educationentry{2014 -- 2019} % Duration
+		{工学博士} % Degree
+		{} % Honours, achievements or distinctions (e.g. first class honours)
+		{智能计算与通信实验室} % Department
+		{北京邮电大学} % Institution
+		
+		%------------------------------------------------
+		
+		\educationentry{2010 -- 2014} % Duration
+		{工学学士} % Degree
+		{} % Honours, achievements or distinctions (e.g. first class honours)
+		{信息与通信工程学院} % Department
+		{北京邮电大学} % Institution
+		
+		%------------------------------------------------
+		
+	\end{supertabular}
+	
+	%----------------------------------------------------------------------------------------
+	%	AWARDS
+	%----------------------------------------------------------------------------------------
+	
+	\section{获奖情况}
+	
+	% Example \tableentry{} command to add another line:
+	
+	%\tableentry{Heading}{Content}{spaceafter}
+	
+	% All 3 parameters must be supplied but any can be empty if you don't need them
+	% A "spaceafter" value in the third parameter will add some vertical space -- this is to be used between headings
+	
+	%------------------------------------------------
+	
+	\begin{supertabular}{rl} % Start a table with two columns, the table will ensure everything is aligned
+		
+		%------------------------------------------------
+		
+		\tableentry{2017}{国家奖学金}{}
+		\tableentry{}{\textit{北京邮电大学智能计算与通信实验室}}{spaceafter}
+		
+		%------------------------------------------------
+		
+		\tableentry{2018}{第二届良飞奖}{}
+		\tableentry{}{\textit{北京邮电大学智能计算与通信实验室}}{spaceafter}
+		
+		%------------------------------------------------
+		
+	\end{supertabular}
+	
+	%----------------------------------------------------------------------------------------
+	%	COMPUTER SKILLS
+	%----------------------------------------------------------------------------------------
+	
+	\section{编程技能} 
+	
+	% Example \tableentry{} command to add another line:
+	
+	%\tableentry{Heading}{Content}{spaceafter}
+	
+	% All 3 parameters must be supplied but any can be empty if you don't need them
+	% A "spaceafter" value in the third parameter will add some vertical space -- this is to be used between headings
+	
+	%------------------------------------------------
+	
+	\begin{supertabular}{rl} % Start a table with two columns, the table will ensure everything is aligned
+		
+		%------------------------------------------------
+		
+		\tableentry{精通}{Python\includegraphics*[width=0.019\textwidth]{python.png}, Node.js\includegraphics*[width=0.019\textwidth]{nodejs.png}}{spaceafter}
+		
+		%------------------------------------------------
+		
+		\tableentry{熟悉}{C, \CPP, MATLAB, \LaTeX, SQL}{}
+		\tableentry{}{shell, HTML, Javascript, CSS}{spaceafter}
+		
+		%------------------------------------------------
+		
+		\tableentry{了解}{Go, Rust, lisp, Java}{spaceafter}
+		
+		%------------------------------------------------
+		
+	\end{supertabular}
+	
+	%----------------------------------------------------------------------------------------
+	%	COMMUNICATION SKILLS
+	%----------------------------------------------------------------------------------------
+	
+	\section{沟通}
+	
+	% Example \tableentry{} command to add another line:
+	
+	%\tableentry{Heading}{Content}{spaceafter}
+	
+	% All 3 parameters must be supplied but any can be empty if you don't need them
+	% A "spaceafter" value in the third parameter will add some vertical space -- this is to be used between headings
+	
+	%------------------------------------------------
+	
+	\begin{supertabular}{rl} % Start a table with two columns, the table will ensure everything is aligned
+		
+		%------------------------------------------------
+		
+		\tableentry{}{}{spaceafter}
+		
+		%------------------------------------------------
+		
+		\tableentry{Posters}{Poster at the Meeting of the American}{}
+		\tableentry{}{Physical Society -- 1985}{spaceafter}
+		
+		%------------------------------------------------
+		
+	\end{supertabular}
+	
+	%----------------------------------------------------------------------------------------
+	%	SKILLS DESCRIPTION
+	%----------------------------------------------------------------------------------------
+	
+	\section{技能}
+	
+	% Example \longformdescription{} command to add another section:
+	
+	%\longformdescription{Heading}{Description}
+	
+	%------------------------------------------------
+	
+	\longformdescription{Goal Oriented}{I believe in action over long-winded discussions. I listen to everyone's viewpoints and use my judgement to immediately act based on consensus to achieve goals quickly and efficiently.}
+	
+	\longformdescription{Physical Dexterity}{Manual manipulation of experimental equipment and training within Black Mesa (e.g. the Hazard Course) have contributed to an enjoyment of working with my hands.}
+	
+	\longformdescription{Passionate}{I have been interested in theoretical physics such as quantum mechanics and relativity from an early age. My education and research have cemented this interest into a passion. I greatly enjoy carrying out fundamental physics research with potential practical applications.}
+	
+	%----------------------------------------------------------------------------------------
+	%	PUBLICATIONS
+	%----------------------------------------------------------------------------------------
+	\switchcolumn
+	\section{已发表论文}
+	
+	% Example \longformdescription{} command to add another publication:
+	
+	%\longformpublication{Reference (format this manually as desired)}
+	
+	%------------------------------------------------
+	%\renewcommand{\labelenumi}{\theenumi}
+	%\renewcommand{\theenumi}{\roman{enumi}}
+	\begin{enumerate}[font=\color{headings}\bfseries]
+		
+	\item \longformpublication{Kan Zheng, \textbf{Lu Hou}, Hanling Meng, Qiang Zheng, Ning Lu, Lei Lei, ``Soft-defined heterogeneous vehicular network: architecture and challenges,'' \textit{IEEE Network}, vol. 30, no. 4, July 2016, pp. 72-80.\IF{7.23}}
+	
+	\item \longformpublication{\textbf{Lu Hou}, Shaohang Zhao, Xiong Xiong, Kan Zheng, Periklis Chatzimisios, M. Shamim Hossain, Wei Xiang, ``Internet of things cloud: architecture and implementation,'' \textit{IEEE Communications Magazine}, vol. 54, no. 12, Dec. 2016, pp. 32-39. \IF{10.435}}
+	
+	\item \longformpublication{\textbf{Lu Hou}, Shaohang Zhao, Xing Li, Periklis Chatzimisios, Kan Zheng, ``Design and implementation of application programming interface for Internet of things cloud,'' \textit{International Journal of Network Management}, vol. 27, no. 3, June 2016. \IF{1.118}}
+	
+	\item \longformpublication{\textbf{Lu Hou}, Kan Zheng, Periklis Chatzimisios, Yi Feng, ``A continuous-time Markov decision process-based resource allocation scheme in vehicular cloud for mobile video services,'' \textit{Computer Communications}, vol. 118, Mar. 2018, pp. 140-147. \IF{3.338}}
+		
+	\item \longformpublication{\textbf{Lu Hou}, Lei Lei, Kan Zheng, ``Design on publish/subscribe message dissemination for vehicular networks with mobile edge computing,'' \textit{2017 IEEE GLOBECOM}, Dec. 2017}
+	
+	\item \longformpublication{Xiong Xiong, \textbf{Lu Hou}, Kan Zheng, Wei Xiang, M. Shamim Hossain, and Sk Md Mizanur Rahman, ``SMDP-based radio resource allocation scheme in software-defined internet of things networks,'' \textit{IEEE Sensors Journal} vol. 16, no. 20, June 2016, pp. 7304-7314. \IF{2.512}}
+				
+	\item \longformpublication{Xiong Xiong, \textbf{Lu Hou}, Long Zhao, ``A Group-Based Massive Multiple Access Scheme in Cellular M2M Networks,'' \textit{Computer Communications}, vol. 121, May. 2018, pp. 44-49. \IF{3.338}}
+	\end{enumerate}				
+	
+	%------------------------------------------------
+	
+	% As an alternative to a long-form publication list, you can create a shorter summary using only DOI values and years.
+	
+	% Example \doipublication{} command to add another publication:
+	
+	%\doipublication{Year}{DOI}{firstauthor}{spaceafter}
+	
+	% All four parameters are required (can be empty though)
+	% A value of "firstauthor" in the third parameter will print the DOI in bold
+	% A "spaceafter" value in the fourth parameter will add some vertical space -- this is to be used between years
+	
+	%------------------------------------------------
+	
+	\medskip % Extra whitespace before the next section
+	
+	%----------------------------------------------------------------------------------------
+	
+\end{paracol}
+
+%----------------------------------------------------------------------------------------
+\newpage
+
+\begin{paracol}{2} % Begin the multi-column environment
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CURRICULUM VITAE TEXT
+%----------------------------------------------------------------------------------------
+
+\parbox[top][0.12\textheight][c]{\linewidth}{ % Parbox to hold the author name and CV text; fixed height to match the coloured box to the right, centred vertically and full line width
+	\vspace{-0.04\textheight} % Reduce whitespace above the parbox to separate it from the main content
+	\centering % Centre text
+	{\sffamily\Huge Lu Hou}\\\medskip % Your name
+	{\Huge\color{headings}\cvtextfont Curriculum Vitae}
+}
+
+%----------------------------------------------------------------------------------------
+%	MAJOR RESEARCH PROJECT
+%----------------------------------------------------------------------------------------
+
+\section{Doctoral Research}
+
+{\raggedright\textbf{``Research on Resource Management and Optimization of Mobile Cloud Networks for Internet of Vehicles" from \textit{The National Natural Science Foundation of China}}\\\medskip}
+
+My research examined the use of ELW pulses from a mode-locked source array inducted through transuranic crystals to observe entanglement on supraquantum structures. Theoretical advancements included prediction of quantum resonance phenomena including the possibility of resonance cascades. I was motivated to conduct this doctoral research due to my passion for teleportation of matter and I believe I have laid the foundation for further experimental validation and development of practical outcomes.
+
+\medskip % Extra whitespace before the next section
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Work Experience}
+
+% Blank \workposition command to add another job:
+
+%\workposition{} % Duration
+%{} % FT/PT (full time or part time)
+%{} % Employer
+%{} % Job title
+%{} % Description
+
+% All 5 parameters must be supplied but any can be empty if you don't need them
+
+%------------------------------------------------
+
+\workposition{Current, from Jan 1995} % Duration
+{FT} % FT/PT (full time or part time)
+{Black Mesa Research Facility} % Employer
+{Team Leader (Anomalous Materials)} % Job title
+{As part of this promotion, I began conducting nuclear and subatomic research in the Anomalous Materials department. My team and I are particularly interested in dimensionality and its interaction with spacetime. The focus is on practical outcomes and applications in teleportation and communication with distal locations.} % Description
+
+%------------------------------------------------
+
+\workposition{Feb 1991 -- Jan 1995} % Duration
+{FT} % FT/PT (full time or part time)
+{Black Mesa Research Facility} % Employer
+{Level 3 Research Associate} % Job title
+{This position involved transitioning from purely theoretical work to experimental applications utilising the immense resources of Black Mesa. The transition required an initial learning curve in hazard containment, health and safety procedures and operating experimental infrastructure. Manipulating valves, carts, buttons, levers, etc considerably increased my physical fitness.}  % Description
+
+%------------------------------------------------
+
+\workposition{Jul 1982 -- Dec 1984} % Duration
+{PT} % FT/PT (full time or part time)
+{WashPests Limited} % Employer
+{Pest Control Technician} % Job title
+{In this summer job I was tasked with helping eradicate pests from industrial areas. Work involved setting traps, spraying and physical eradication. I received praise for reaching difficult areas and my innovative use of a crowbar to assist in my work.} % Description
+
+%------------------------------------------------
+
+\vspace{-\baselineskip}\medskip % Standardise the whitespace after this section and before the next (the custom command adds too much otherwise)
+
+%----------------------------------------------------------------------------------------
+%	REFERENCES
+%----------------------------------------------------------------------------------------
+
+%\section{References}
+%
+%%\textit{References available on request}
+%
+%%------------------------------------------------
+%
+%% Example \tableentry{} command to add another line:
+%
+%%\tableentry{Heading}{Content}{spaceafter}
+%
+%% All 3 parameters must be supplied but any can be empty if you don't need them
+%% A "spaceafter" value in the third parameter will add some vertical space -- this is to be used between headings
+%
+%%------------------------------------------------
+%
+%\begin{supertabular}{rl} % Start a table with two columns, the table will ensure everything is aligned
+%	
+%	%------------------------------------------------
+%	
+%	\tableentry{}{\textbf{Dr. Isaac Kleiner}}{spaceafter}
+%	\tableentry{Position}{Professor}{}
+%	\tableentry{Employer}{\href{http://web.mit.edu/physics/}{Department of Physics}}{}
+%	\tableentry{}{\href{https://web.mit.edu}{\textit{Massachusetts Institute of Technology}}}{spaceafter}
+%	\tableentry{Phone}{+1 (617) 253 1000 x5322 (Work)}{}
+%	\tableentry{Mobile}{+1 (232) 842-3583}{}
+%	
+%	%------------------------------------------------
+%	
+%	\tableentry{}{}{} % Creates some additional whitespace between the references
+%	
+%	%------------------------------------------------
+%	
+%	\tableentry{}{\textbf{Dr. Eli Vance}}{spaceafter}
+%	\tableentry{Position}{Scientist (HL1)}{}
+%	\tableentry{Employer}{\href{http://www.bmrf.us}{Black Mesa Research Facility}}{spaceafter}
+%	\tableentry{Email}{\href{mailto:e.vance@bmrf.us}{e.vance@bmrf.us}}{}
+%	\tableentry{Phone}{+1 (800) 786-1410 x6235 (Work)}{}
+%	\tableentry{Mobile}{+1 (201) 632-3901}{}
+%	
+%	%------------------------------------------------
+%	
+%\end{supertabular}
+%
+%\medskip % Extra whitespace before the next section
+
+%----------------------------------------------------------------------------------------
+
+\switchcolumn % Switch to the next paracol column
+
+%----------------------------------------------------------------------------------------
+%	COLOURED CONTACT DETAILS BOX
+%----------------------------------------------------------------------------------------
+
+\parbox[top][0.12\textheight][c]{\linewidth}{ % Parbox to hold the colour box; fixed height to match the name/CV text to the left, centred vertically and full line width
+	\vspace{-0.04\textheight} % Reduce whitespace above the parbox to separate it from the main content
+	\colorbox{shade}{ % Create the coloured box
+		\begin{supertabular}{p{0.05\linewidth}|p{0.775\linewidth}} % Start a table with two columns, the table will ensure everything is aligned
+			\raisebox{-1pt}{\faHome} & No. 10, Xitucheng Road, Haidian District, Beijing \\ % Address
+			\raisebox{-1pt}{\faPhone} & +86-15501081468 \\ % Phone number
+			\raisebox{0pt}{\small\faEnvelope} & \href{mailto:houlu8674@bupt.edu.cn}{houlu8674@bupt.edu.cn} \\ % Email address
+			\raisebox{-1pt}{\small\faDesktop} & \href{https://www.lucima.cn}{https://www.lucima.cn} \\ % Website
+			\raisebox{-1pt}{\faGithub} & \href{https://github.com/username}{https://github.com/username} \\ % GitHub profile
+			\raisebox{-1pt}{\faLinkedinSquare} & \href{https://www.linkedin.com/in/username}{https://www.linkedin.com/in/username} \\ % LinkedIn profile
+			\raisebox{-1pt}{\faWechat} &
+			guaguade\\
+			\raisebox{-1pt}{\faWeibo} &
+			\href{http://weibo.com/lucima}{astroooooo}\\
+			% See fontawesome.pdf in the fonts folder for all icons you can use
+		\end{supertabular}
+	}
+}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Education} 
+
+% Blank \educationentry{} command to add another degree:
+
+%\educationentry{} % Duration
+%{} % Degree
+%{} % Honours, achievements or distinctions (e.g. first class honours)
+%{} % Department
+%{} % Institution
+
+% All 5 parameters must be supplied but any can be empty if you don't need them
+
+%------------------------------------------------
+
+\begin{supertabular}{rl} % Start a table with two columns, the table will ensure everything is aligned
+
+	%------------------------------------------------
+	
+	\educationentry{1986 -- 1990} % Duration
+	{Doctor of Philosophy} % Degree
+	{} % Honours, achievements or distinctions (e.g. first class honours)
+	{Theoretical Physics} % Department
+	{Massachusetts Institute of Technology} % Institution
+	
+	%------------------------------------------------
+	
+	\educationentry{1985} % Duration
+	{Master of Science} % Degree
+	{First Class Honours} % Honours, achievements or distinctions (e.g. first class honours)
+	{Theoretical Physics} % Department
+	{Massachusetts Institute of Technology} % Institution
+	
+	%------------------------------------------------
+	
+	\educationentry{1982 -- 1984} % Duration
+	{Bachelor of Physics} % Degree
+	{} % Honours, achievements or distinctions (e.g. first class honours)
+	{Department of Physics} % Department
+	{The University of Washington} % Institution
+	
+	%------------------------------------------------
+
+\end{supertabular}
+
+%----------------------------------------------------------------------------------------
+%	AWARDS
+%----------------------------------------------------------------------------------------
+
+\section{Awards}
+
+% Example \tableentry{} command to add another line:
+
+%\tableentry{Heading}{Content}{spaceafter}
+
+% All 3 parameters must be supplied but any can be empty if you don't need them
+% A "spaceafter" value in the third parameter will add some vertical space -- this is to be used between headings
+
+%------------------------------------------------
+
+\begin{supertabular}{rl} % Start a table with two columns, the table will ensure everything is aligned
+	
+	%------------------------------------------------
+	
+	\tableentry{2017}{\textbf{China National Scholarship}}{}
+	\tableentry{}{\textit{Intelligent Computing and Communication Lab}}{}
+	\tableentry{}{\textit{Beijing Univ. of Posts and Telecom.}}{spaceafter}
+	
+	%------------------------------------------------
+	
+	\tableentry{2018}{\textbf{$2^{th}$ LiangFei Scholarship}}{}
+	\tableentry{}{\textit{Intelligent Computing and Communication Lab}}{}
+	\tableentry{}{\textit{Beijing Univ. of Posts and Telecom.}}{spaceafter}
+	
+	%------------------------------------------------
+	
+\end{supertabular}
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS
+%----------------------------------------------------------------------------------------
+
+\section{Programming Skills} 
+
+% Example \tableentry{} command to add another line:
+
+%\tableentry{Heading}{Content}{spaceafter}
+
+% All 3 parameters must be supplied but any can be empty if you don't need them
+% A "spaceafter" value in the third parameter will add some vertical space -- this is to be used between headings
+
+%------------------------------------------------
+
+\begin{supertabular}{rl} % Start a table with two columns, the table will ensure everything is aligned
+	
+	\tableentry{Expert}{Python\includegraphics*[width=0.019\textwidth]{python.png}, Node.js\includegraphics*[width=0.019\textwidth]{nodejs.png}}{spaceafter}
+
+	%------------------------------------------------
+	
+	\tableentry{Intermediate}{C, \CPP, MATLAB, \LaTeX, SQL}{}
+	\tableentry{}{shell, HTML, Javascript, CSS}{spaceafter}
+	
+	%------------------------------------------------
+	
+	\tableentry{Beginner}{Go, Rust, lisp, Java}{spaceafter}
+	
+	%------------------------------------------------
+	
+\end{supertabular}
+
+%----------------------------------------------------------------------------------------
+%	COMMUNICATION SKILLS
+%----------------------------------------------------------------------------------------
+
+\section{Communication Skills}
+
+% Example \tableentry{} command to add another line:
+
+%\tableentry{Heading}{Content}{spaceafter}
+
+% All 3 parameters must be supplied but any can be empty if you don't need them
+% A "spaceafter" value in the third parameter will add some vertical space -- this is to be used between headings
+
+%------------------------------------------------
+
+\begin{supertabular}{rl} % Start a table with two columns, the table will ensure everything is aligned
+	
+	%------------------------------------------------
+	
+	\tableentry{Conferences}{Oral Presentation at the Annual MIT}{}
+	\tableentry{}{Theoretical Physics Conference -- 1987}{spaceafter}
+	
+	%------------------------------------------------
+	
+	\tableentry{Posters}{Poster at the Meeting of the American}{}
+	\tableentry{}{Physical Society -- 1985}{spaceafter}
+	
+	%------------------------------------------------
+	
+\end{supertabular}
+
+%----------------------------------------------------------------------------------------
+%	SKILLS DESCRIPTION
+%----------------------------------------------------------------------------------------
+
+\section{Skills}
+
+% Example \longformdescription{} command to add another section:
+
+%\longformdescription{Heading}{Description}
+
+%------------------------------------------------
+
+\longformdescription{Goal Oriented}{I believe in action over long-winded discussions. I listen to everyone's viewpoints and use my judgement to immediately act based on consensus to achieve goals quickly and efficiently.}
+
+\longformdescription{Physical Dexterity}{Manual manipulation of experimental equipment and training within Black Mesa (e.g. the Hazard Course) have contributed to an enjoyment of working with my hands.}
+
+\longformdescription{Passionate}{I have been interested in theoretical physics such as quantum mechanics and relativity from an early age. My education and research have cemented this interest into a passion. I greatly enjoy carrying out fundamental physics research with potential practical applications.}
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS
+%----------------------------------------------------------------------------------------
+\switchcolumn
+\section{Publications}
+\begin{enumerate}[font=\color{headings}\bfseries]
+	\item \longformpublication{Kan Zheng, \textbf{Lu Hou}, Hanling Meng, Qiang Zheng, Ning Lu, Lei Lei, ``Soft-defined heterogeneous vehicular network: architecture and challenges,'' \textit{IEEE Network}, vol. 30, no. 4, July 2016, pp. 72-80.\IF{7.23}}
+	
+	\item \longformpublication{\textbf{Lu Hou}, Shaohang Zhao, Xiong Xiong, Kan Zheng, Periklis Chatzimisios, M. Shamim Hossain, Wei Xiang, ``Internet of things cloud: architecture and implementation,'' \textit{IEEE Communications Magazine}, vol. 54, no. 12, Dec. 2016, pp. 32-39. \IF{10.435}}
+	
+	\item \longformpublication{\textbf{Lu Hou}, Shaohang Zhao, Xing Li, Periklis Chatzimisios, Kan Zheng, ``Design and implementation of application programming interface for Internet of things cloud,'' \textit{International Journal of Network Management}, vol. 27, no. 3, June 2016. \IF{1.118}}
+	
+	\item \longformpublication{\textbf{Lu Hou}, Kan Zheng, Periklis Chatzimisios, Yi Feng, ``A continuous-time Markov decision process-based resource allocation scheme in vehicular cloud for mobile video services,'' \textit{Computer Communications}, vol. 118, Mar. 2018, pp. 140-147. \IF{3.338}}
+	
+	\item \longformpublication{\textbf{Lu Hou}, Lei Lei, Kan Zheng, ``Design on publish/subscribe message dissemination for vehicular networks with mobile edge computing,'' \textit{2017 IEEE GLOBECOM}, Dec. 2017}
+	
+	\item \longformpublication{Xiong Xiong, \textbf{Lu Hou}, Kan Zheng, Wei Xiang, M. Shamim Hossain, and Sk Md Mizanur Rahman, ``SMDP-based radio resource allocation scheme in software-defined internet of things networks,'' \textit{IEEE Sensors Journal} vol. 16, no. 20, June 2016, pp. 7304-7314. \IF{2.512}}
+	
+	\item \longformpublication{Xiong Xiong, \textbf{Lu Hou}, Long Zhao, ``A Group-Based Massive Multiple Access Scheme in Cellular M2M Networks,'' \textit{Computer Communications}, vol. 121, May. 2018, pp. 44-49. \IF{3.338}}
+\end{enumerate}
+% Example \longformdescription{} command to add another publication:
+
+%\longformpublication{Reference (format this manually as desired)}
+
+%------------------------------------------------
+
+%------------------------------------------------
+
+% As an alternative to a long-form publication list, you can create a shorter summary using only DOI values and years.
+
+% Example \doipublication{} command to add another publication:
+
+%\doipublication{Year}{DOI}{firstauthor}{spaceafter}
+
+% All four parameters are required (can be empty though)
+% A value of "firstauthor" in the third parameter will print the DOI in bold
+% A "spaceafter" value in the fourth parameter will add some vertical space -- this is to be used between years
+
+%------------------------------------------------
+
+\medskip % Extra whitespace before the next section
+
+%----------------------------------------------------------------------------------------
+
+\end{paracol}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
