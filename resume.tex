@@ -42,7 +42,8 @@
 \newcommand{\weibosite}{http://weibo.com/lucima}
 \newcommand{\weibo}{astroooooo}
 \newcommand{\IF}[1]{\textcolor{Maroon}{(IF = #1)}}
-\setCJKmainfont{fzlthjt.TTF}
+\setCJKmainfont[Path=fonts/]{fzlthjt}
+\setCJKfamilyfont{cvchsfamilyfont}[Path=fonts/]{fzybxs}
 \input{structure.tex} % Include the file that specifies the document structure
 
 % Headers and footers can be added with the \lhead{} \rhead{} \lfoot{} \rfoot{} commands
@@ -63,14 +64,14 @@
 		\vspace{-0.04\textheight} % Reduce whitespace above the parbox to separate it from the main content
 		\centering % Centre text
 		{\Huge 侯 璐}\faMars\\\medskip % Your name
-		{\Huge\color{headings}\cvtextfont Curriculum Vitae}
+		{\Huge\color{headings}{\CJKfamily{cvchsfamilyfont} 个人简历}}
 	}
 	
 	%----------------------------------------------------------------------------------------
 	%	MAJOR RESEARCH PROJECT
 	%----------------------------------------------------------------------------------------
 	\section{博士研究}
-	
+
 	{\raggedright\textbf{``面向车联网的移动云网络资源管理与优化研究''，来自``\textit{国家自然科学基金项目}''}\\\medskip}
 	
 	My research examined the use of ELW pulses from a mode-locked source array inducted through transuranic crystals to observe entanglement on supraquantum structures. Theoretical advancements included prediction of quantum resonance phenomena including the possibility of resonance cascades. I was motivated to conduct this doctoral research due to my passion for teleportation of matter and I believe I have laid the foundation for further experimental validation and development of practical outcomes.
@@ -83,6 +84,7 @@
 	%----------------------------------------------------------------------------------------
 	\begin{supertabular}{rl}
 		\tableentry{物联网云平台}{}{}
+		\tableentry{LoRa系统}{}{}
 		\tableentry{车联网}{}{}
 	\end{supertabular}
 	\section{项目经历}
@@ -99,27 +101,32 @@
 	
 	%------------------------------------------------
 	
-	\workposition{} % Duration
-	{FT} % FT/PT (full time or part time)
-	{\textit{IEEE 802.11p}开发} % Employer
-	{Team Leader (Anomalous Materials)} % Job title
-	{As part of this promotion, I began conducting nuclear and subatomic research in the Anomalous Materials department. My team and I are particularly interested in dimensionality and its interaction with spacetime. The focus is on practical outcomes and applications in teleportation and communication with distal locations.} % Description
+	\workposition{Sep. 2014 -- Jun. 2015} % Duration
+	{C} % FT/PT (full time or part time)
+	{\textit{IEEE 802.11p}协议栈与应用开发} % Employer
+	{开发者} % Job title
+	{参与开发了车联网IEEE 802.11p通信协议的协议栈，并在ARM开发板上实现了碰撞预警等应用。}
 	
 	%------------------------------------------------
 	
-	\workposition{Feb 1991 -- Jan 1995} % Duration
-	{FT} % FT/PT (full time or part time)
-	{物联网云平台开发} % Employer
-	{Level 3 Research Associate} % Job title
+	\workposition{Sep. 2016 -- Now} % Duration
+	{Node.js} % FT/PT (full time or part time)
+	{物联网云平台设计与实现} % Employer
+	{副团队领导人} % 
 	{This position involved transitioning from purely theoretical work to experimental applications utilising the immense resources of Black Mesa. The transition required an initial learning curve in hazard containment, health and safety procedures and operating experimental infrastructure. Manipulating valves, carts, buttons, levers, etc considerably increased my physical fitness.}  % Description
 	
 	%------------------------------------------------
+	\workposition{Oct. 2017 -- Now} % Duration
+	{Node.js} % FT/PT (full time or part time)
+	{LoRa系统设计与实现} % Employer
+	{团队领导人} % 
+	{设计}  % Description
 	
-	\workposition{Jul 1982 -- Dec 1984} % Duration
-	{PT} % FT/PT (full time or part time)
+	\workposition{Sep. 2015 -- Now} % Duration
+	{Python} % FT/PT (full time or part time)
 	{车联网资源分配算法研究} % Employer
-	{Pest Control Technician} % Job title
-	{In this summer job I was tasked with helping eradicate pests from industrial areas. Work involved setting traps, spraying and physical eradication. I received praise for reaching difficult areas and my innovative use of a crowbar to assist in my work.} % Description
+	{个人} % Job title
+	{} % Description
 	
 	%------------------------------------------------
 	
@@ -238,7 +245,11 @@
 		{北京邮电大学} % Institution
 		
 		%------------------------------------------------
-		
+		\educationentry{June 2019} % Duration
+		{毕业} % Degree
+		{} % Honours, achievements or distinctions (e.g. first class honours)
+		{} % Department
+		{北京邮电大学} % Institution
 	\end{supertabular}
 	
 	%----------------------------------------------------------------------------------------
@@ -265,7 +276,7 @@
 		
 		%------------------------------------------------
 		
-		\tableentry{2018}{校基金}{}
+		\tableentry{2018}{北京邮电大学博士生创新基金资助项目}{}
 		\tableentry{}{\textit{北京邮电大学智能计算与通信实验室}}{spaceafter}
 		
 		%------------------------------------------------
@@ -333,7 +344,7 @@
 	%	COMMUNICATION SKILLS
 	%----------------------------------------------------------------------------------------
 	
-	\section{沟通}
+	\section{英语技能}
 	
 	% Example \tableentry{} command to add another line:
 	
@@ -343,21 +354,7 @@
 	% A "spaceafter" value in the third parameter will add some vertical space -- this is to be used between headings
 	
 	%------------------------------------------------
-	
-	\begin{supertabular}{rl} % Start a table with two columns, the table will ensure everything is aligned
-		
-		%------------------------------------------------
-		
-		\tableentry{}{}{spaceafter}
-		
-		%------------------------------------------------
-		
-		\tableentry{Posters}{Poster at the Meeting of the American}{}
-		\tableentry{}{Physical Society -- 1985}{spaceafter}
-		
-		%------------------------------------------------
-		
-	\end{supertabular}
+	具有熟练地\textbf{听、说、读、写}的英语能力
 	
 	%----------------------------------------------------------------------------------------
 	%	SKILLS DESCRIPTION
@@ -458,8 +455,14 @@ My research examined the use of ELW pulses from a mode-locked source array induc
 %----------------------------------------------------------------------------------------
 %	WORK EXPERIENCE
 %----------------------------------------------------------------------------------------
+\section{Major Research Directions}
+	\begin{supertabular}{rl}
+		\tableentry{Internet of Things Cloud}{}{}
+		\tableentry{LoRa Solutions}{}{}
+		\tableentry{Vehicular Networks}{}{}
+	\end{supertabular}
 
-\section{Work Experience}
+\section{Project Experiences}
 
 % Blank \workposition command to add another job:
 
@@ -560,7 +563,7 @@ My research examined the use of ELW pulses from a mode-locked source array induc
 	\vspace{-0.04\textheight} % Reduce whitespace above the parbox to separate it from the main content
 	\colorbox{shade}{ % Create the coloured box
 		\begin{supertabular}{p{0.05\linewidth}|p{0.775\linewidth}} % Start a table with two columns, the table will ensure everything is aligned
-			\raisebox{-1pt}{\faHome} & No. 10, Xitucheng Road, Haidian District, Beijing \\ % Address
+			\raisebox{-1pt}{\faHome} & No. 10, Xitucheng Road, Beijing \\ % Address
 			\raisebox{-1pt}{\faPhone} & +86-15501081468 \\ % Phone number
 			\raisebox{0pt}{\small\faEnvelope} & \href{mailto:houlu8674@bupt.edu.cn}{houlu8674@bupt.edu.cn} \\ % Email address
 			\raisebox{-1pt}{\small\faDesktop} & \href{https://www.lucima.cn}{https://www.lucima.cn} \\ % Website
@@ -597,30 +600,26 @@ My research examined the use of ELW pulses from a mode-locked source array induc
 
 	%------------------------------------------------
 	
-	\educationentry{1986 -- 1990} % Duration
+	\educationentry{2014 -- 2019} % Duration
 	{Doctor of Philosophy} % Degree
 	{} % Honours, achievements or distinctions (e.g. first class honours)
-	{Theoretical Physics} % Department
-	{Massachusetts Institute of Technology} % Institution
+	{Intell. Comput. and Commun. Lab} % Department
+	{Beijing Univ. of Posts and Telecom.} % Institution
 	
 	%------------------------------------------------
 	
-	\educationentry{1985} % Duration
-	{Master of Science} % Degree
-	{First Class Honours} % Honours, achievements or distinctions (e.g. first class honours)
-	{Theoretical Physics} % Department
-	{Massachusetts Institute of Technology} % Institution
-	
-	%------------------------------------------------
-	
-	\educationentry{1982 -- 1984} % Duration
-	{Bachelor of Physics} % Degree
+	\educationentry{2010 -- 2014} % Duration
+	{Bachelor of Engineering} % Degree
 	{} % Honours, achievements or distinctions (e.g. first class honours)
-	{Department of Physics} % Department
-	{The University of Washington} % Institution
+	{School of Inform. and Commun. Eng.} % Department
+	{Beijing Univ. of Posts and Telecom.} % Institution
 	
 	%------------------------------------------------
-
+	\educationentry{June 2019} % Duration
+	{Graduation}% Degree
+	{} % Honours, achievements or distinctions (e.g. first class honours)
+	{} % Department
+	{Beijing Univ. of Posts and Telecom.} % Institution
 \end{supertabular}
 
 %----------------------------------------------------------------------------------------
@@ -643,13 +642,17 @@ My research examined the use of ELW pulses from a mode-locked source array induc
 	%------------------------------------------------
 	
 	\tableentry{2017}{\textbf{China National Scholarship}}{}
-	\tableentry{}{\textit{Intelligent Computing and Communication Lab}}{}
+	\tableentry{}{\textit{Intell. Comput. and Commun. Lab}}{}
 	\tableentry{}{\textit{Beijing Univ. of Posts and Telecom.}}{spaceafter}
 	
 	%------------------------------------------------
+	\tableentry{2018}{\textbf{BUPT Excellent Ph.D. Students Foundation}}{}
+	\tableentry{}{\textit{Intell. Comput. and Commun. Lab}}{}
+	\tableentry{}{\textit{Beijing Univ. of Posts and Telecom.}}{spaceafter}
+	%------------------------------------------------
 	
 	\tableentry{2018}{\textbf{$2^{th}$ LiangFei Scholarship}}{}
-	\tableentry{}{\textit{Intelligent Computing and Communication Lab}}{}
+	\tableentry{}{\textit{Intell. Comput. and Commun. Lab}}{}
 	\tableentry{}{\textit{Beijing Univ. of Posts and Telecom.}}{spaceafter}
 	
 	%------------------------------------------------
@@ -692,8 +695,9 @@ My research examined the use of ELW pulses from a mode-locked source array induc
 %	COMMUNICATION SKILLS
 %----------------------------------------------------------------------------------------
 
-\section{Communication Skills}
+\section{English Skills}
 
+Able to \emph{Listen}, \emph{Speak}, \emph{Read} and \emph{Write} English skillfully.
 % Example \tableentry{} command to add another line:
 
 %\tableentry{Heading}{Content}{spaceafter}
@@ -702,22 +706,6 @@ My research examined the use of ELW pulses from a mode-locked source array induc
 % A "spaceafter" value in the third parameter will add some vertical space -- this is to be used between headings
 
 %------------------------------------------------
-
-\begin{supertabular}{rl} % Start a table with two columns, the table will ensure everything is aligned
-	
-	%------------------------------------------------
-	
-	\tableentry{Conferences}{Oral Presentation at the Annual MIT}{}
-	\tableentry{}{Theoretical Physics Conference -- 1987}{spaceafter}
-	
-	%------------------------------------------------
-	
-	\tableentry{Posters}{Poster at the Meeting of the American}{}
-	\tableentry{}{Physical Society -- 1985}{spaceafter}
-	
-	%------------------------------------------------
-	
-\end{supertabular}
 
 %----------------------------------------------------------------------------------------
 %	SKILLS DESCRIPTION
