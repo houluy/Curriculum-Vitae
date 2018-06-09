@@ -63,6 +63,7 @@ ItalicFont=*-Italic.ttf,
 SmallCapsFont=*-SC.ttf
 ]
 
+
 \newfontfamily\cvtextfont[Path=fonts/]{freebooterscript} % Create a new font family for the cursive font Freebooter Script, provided with the template in the fonts folder
 \newfontfamily{\cvchsfont}[Path=fonts/]{fzybxs}
 \newfontfamily{\FA}[Path=fonts/]{FontAwesome} % Create a new font family for FontAwesome icons, provided with the template in the fonts folder
@@ -124,9 +125,16 @@ SmallCapsFont=*-SC.ttf
 
 % Command for entering a new work position
 \newcommand{\workposition}[5]{
-	{\raggedleft\textsc{#1\expandafter\ifstrequal\expandafter{#2}{}{}{\hspace{6pt}\footnotesize{(#2)}}}\par} % Duration and conditional full time/part time text
+	{\raggedleft\textsc{\textbf{#1}\expandafter\ifstrequal\expandafter{#2}{}{}{\hspace{6pt}\footnotesize{(#2)}}}\par} % Duration and conditional full time/part time text
 	\expandafter\ifstrequal\expandafter{#3}{}{}{{\raggedright\large #3}\\} % Employer
-	\expandafter\ifstrequal\expandafter{#4}{}{}{{\raggedright\large\textit{\textbf{#4}}}\\[4pt]} % Job title
+	\expandafter\ifstrequal\expandafter{#4}{}{}{{\raggedright\large #4}\\[4pt]} % Job title
+	\expandafter\ifstrequal\expandafter{#5}{}{}{#5\\} % Description
+}
+
+\newcommand{\chsworkposition}[5]{
+	{\raggedright\textsc{\textbf{#1}\expandafter\ifstrequal\expandafter{#2}{}{}{\hspace{6pt}\footnotesize{(#2)}}}\par} % Duration and conditional full time/part time text
+	\expandafter\ifstrequal\expandafter{#3}{}{}{{\raggedright\large #3}\\} % Employer
+	\expandafter\ifstrequal\expandafter{#4}{}{}{{\raggedright #4}\\[4pt]} % Job title
 	\expandafter\ifstrequal\expandafter{#5}{}{}{#5\\} % Description
 }
 
@@ -150,6 +158,11 @@ SmallCapsFont=*-SC.ttf
 	\textsc{#1} & #2\expandafter\ifstrequal\expandafter{#3}{}{\\}{\\[6pt]} % First the heading, then content, then a conditional insertion of whitespace if the third parameter has any content in it
 }
 
+
+\newcommand{\chsskillentry}[2]{
+	\textit{#1}\\[3pt]
+	#2\medskip
+}
 % Command for entering a long-form description where there is a title on one line and a paragraph description below it
 \newcommand{\longformdescription}[2]{
 	\textit{#1}\\[3pt]
