@@ -35,7 +35,7 @@
 %\newfontfamily{\fzblack}{fzlthjt.TTF}
 %\newCJKfontfamily{\fzybxs}{fzybxs.ttf}
 \newcommand{\email}{houlu8674@bupt.edu.cn}
-\newcommand{\website}{https://www.houlu.me}
+\newcommand{\website}{https://houlu.me}
 \newcommand{\github}{https://github.com/houluy}
 \newcommand{\linkedin}{https://www.linkedin.com/in/houlu}
 \newcommand{\wechat}{guaguade}
@@ -65,30 +65,14 @@
 	\parbox[top][0.12\textheight][c]{\linewidth}{ % Parbox to hold the author name and CV text; fixed height to match the coloured box to the right, centred vertically and full line width
 		\vspace{-0.04\textheight} % Reduce whitespace above the parbox to separate it from the main content
 		\centering % Centre text
-		{\Huge 侯 璐}\faMars\\\medskip % Your name
+		{\Huge 侯 璐}\\\medskip % Your name
 		{\Huge\color{headings}{\CJKfamily{cvchsfamilyfont} 个人简历}}
 	}
 	
 	%----------------------------------------------------------------------------------------
 	%	MAJOR RESEARCH PROJECT
 	%----------------------------------------------------------------------------------------
-	\section{博士论文}
-
-	{\raggedright\textbf{``面向车联网的移动云网络资源管理与优化研究''，来自``\textit{国家自然科学基金项目}''}\\\medskip}
-	针对车联网相关业务，利用凸优化、机器学习等工具，研究在分层云计算网络支持下的资源管理问题。
 	
-	
-	\medskip % Extra whitespace before the next section
-	\section{主要研究方向}
-	
-	%----------------------------------------------------------------------------------------
-	%	WORK EXPERIENCE
-	%----------------------------------------------------------------------------------------
-	\begin{supertabular}{rl}
-		\tableentry{物联网云平台}{架构设计、实现、性能优化}{}
-		\tableentry{LoRaWAN\texttrademark 系统}{协议分析、架构设计、实现、性能优化}{}
-		\tableentry{车联网}{分层车云网络资源管理与优化算法研究}{spaceafter}
-	\end{supertabular}
 	\section{核心项目经历}
 	
 	% Blank \workposition command to add another job:
@@ -102,37 +86,53 @@
 	% All 5 parameters must be supplied but any can be empty if you don't need them
 	
 	%------------------------------------------------
-	
 	\chsworkposition{} % Duration
 	{} % FT/PT (full time or part time)
-	{\textbf{DSRC}协议栈与应用开发(Sep. 2014 -- June 2015)} % Employer
-	{\CJKfamily{titlefont} 开发} % Job title
-	{参与开发了车联网IEEE 802.11p通信协议的协议栈，并在ARM开发板上实现了碰撞预警等应用。主要开发语言——C。}
-	
-	%------------------------------------------------
-	
-	\chsworkposition{} % Duration
-	{} % FT/PT (full time or part time)
-	{物联网云平台设计与实现(Sep. 2016 -- Now)} % Employer
-	{\CJKfamily{titlefont} 副团队领导人} % 
-	{主要负责团队人员、项目进度管理，服务端鉴权认证、亚马逊\faAmazon Alexa服务接入、Elasticsearch搜索服务构建等方面开发工作及后期部署、运维、性能测试等事宜。主要开发语言——Node.js。}  % Description
-	
-	%------------------------------------------------
-	\chsworkposition{} % Duration
-	{} % FT/PT (full time or part time)
-	{\textbf{LoRaWAN\texttrademark} 系统设计与实现(Oct. 2017 -- Now)} % Employer
+	{1. \textbf{LoRaWAN\texttrademark} 系统设计与实现(Oct. 2017 -- Now)} % Employer
 	{\CJKfamily{titlefont} 团队领导人} % 
-	{领导团队设计实现了基于LoRaWAN\texttrademark 协议的整套云服务系统，包括自适应数据速率(ADR)算法设计等。作为团队领导人，我需要负责管理项目进度、任务分配及汇总。此外，我需要把控技术方向，保证项目处于正确的轨道上。我还需要保证文档紧跟着开发进度在完善。我也负责着一部分服务的开发工作。主要开发语言——Node.js。}  % Description
+	{\begin{enumerate}
+		\item 项目进度管理，需求分析与功能拆分，团队人员分工等。领导团队设计实现了基于LoRaWAN\texttrademark 协议的整套云服务系统，包括自适应数据速率(ADR)算法设计等；
+		\item 整体架构设计。独立设计了分布式系统架构。
+		
+		\item 整体方案设计。独立完成了实现方案设计，包括代码仓库架构，代码风格统一，Code Review等。
+		
+		\item 核心模块编写。独立完成了MAC层消息解析封装、设备注册两大核心模块的编写。
+		
+		\item 文档编写。独立完成文档模板设计，领导团队完成文档编写，内容审核修改等。
+		
+		\item 功能测试。独立利用Python实现了LoRaWAN\texttrademark 设备模拟程序，可用于功能性测试。
+	\end{enumerate}
+	主要开发语言——Node.js，Python。}  % Description
+	\par\noindent\rule{0.53\textwidth}{0.4pt}
+	%------------------------------------------------
 	
 	\chsworkposition{} % Duration
 	{} % FT/PT (full time or part time)
-	{车联网资源分配算法研究(Sep. 2015 -- Now)} % Employer
-	{\CJKfamily{titlefont} 个人研究} % Job title
-	{研究性工作，通过凸优化、大数据、机器学习等理论解决车联网业务在云计算网络架构中的资源管理问题。参与了多个自然基金项目及横向项目等。主要研究语言：Python，工具：IPython，TensorFlow等。} % Description
+	{2. 物联网云平台设计与实现(Sep. 2016 -- Now)} % Employer
+	{\CJKfamily{titlefont} 副团队领导人} % 
+	{\begin{enumerate}
+		\item 参与团队云平台架构设计，完成论文产出$^{[1]}$。
+		\item 独立完成服务端安全方案设计与实现。为平台设计并实现了加密、鉴权、OAuth2.0认证、权限管理等安全机制；
+		\item 独立完成亚马逊\faAmazon Alexa服务接入（语句设计，接口开发等）；
+		\item 独立完成Elasticsearch全文搜索引擎搭建与接口开发; 数据清理，数据初始化脚本开发;
+		\item 参与团队部署、运维、功能测试、性能测试；
+		\end{enumerate}
+	主要开发语言——Node.js, Python。}  % Description
+		
+	\par\noindent\rule{0.53\textwidth}{0.4pt}
+	%------------------------------------------------
+
+	
+	\chsworkposition{} % Duration
+	{} % FT/PT (full time or part time)
+	{3. 车联网资源分配算法研究(Sep. 2015 -- Now)} % Employer
+	{\CJKfamily{titlefont} 个人研究}\\ % Job title
+	{\raggedright\textbf{博士论文：``面向车联网的移动云网络资源管理与优化研究''}，来自``\textit{国家自然科学基金项目}''。
+	针对车联网相关业务，利用机器学习等理论工具，研究分层云计算车联网中的资源管理问题。并参与了多个自然基金项目及横向研究性项目。主要算法：动态规划与机器学习。主要开发语言：Python，工具：Jupyter等。} % Description
 	
 	%------------------------------------------------
 	
-	\vspace{-\baselineskip}\medskip % Standardise the whitespace after this section and before the next (the custom command adds too much otherwise)
+	%\vspace{-\baselineskip}\medskip % Standardise the whitespace after this section and before the next (the custom command adds too much otherwise)
 	
 	
 	%----------------------------------------------------------------------------------------
@@ -186,26 +186,37 @@
 	
 	%----------------------------------------------------------------------------------------
 	
-	\switchcolumn % Switch to the next paracol column
 	
+	\section{计算机技能} 
+	
+	%------------------------------------------------
+	
+	\begin{supertabular}{rl} % Start a table with two columns, the table will ensure everything is aligned
+		
+		%------------------------------------------------
+		
+		\tableentry{精通}{Python\includegraphics*[width=0.019\textwidth]{python.png}, Node.js\includegraphics*[width=0.019\textwidth]{nodejs.png}}{spaceafter}
+		
+		%------------------------------------------------
+		
+		\tableentry{熟悉}{C, \CPP, MATLAB, \LaTeX, SQL, shell, HTML}{}
+		
+		%------------------------------------------------
+		
+	\end{supertabular}
+
 	%----------------------------------------------------------------------------------------
 	%	COLOURED CONTACT DETAILS BOX
 	%----------------------------------------------------------------------------------------
-	
+	\switchcolumn % Switch to the next paracol column
 	\parbox[top][0.12\textheight][c]{\linewidth}{ % Parbox to hold the colour box; fixed height to match the name/CV text to the left, centred vertically and full line width
 		\vspace{-0.04\textheight} % Reduce whitespace above the parbox to separate it from the main content
 		\colorbox{shade}{ % Create the coloured box
 			\begin{supertabular}{p{0.05\linewidth}|p{0.775\linewidth}} % Start a table with two columns, the table will ensure everything is aligned
-				\raisebox{-1pt}{\faHome} & 北京市海淀区西土城路10号 \\ % Address
 				\raisebox{-1pt}{\faPhone} & +86-15501081468 \\ % Phone number
 				\raisebox{0pt}{\small\faEnvelope} & \href{mailto:\email}{\email} \\ % Email address
 				\raisebox{-1pt}{\small\faDesktop} & \href{\website}{\website} \\ % Website
 				\raisebox{-1pt}{\faGithub} & \href{\github}{\github} \\ % GitHub profile
-				\raisebox{-1pt}{\faLinkedinSquare} & \href{\linkedin}{\linkedin} \\ % LinkedIn profile
-				\raisebox{-1pt}{\faWechat} &
-				\wechat \\
-				\raisebox{-1pt}{\faWeibo} &
-				\href{\weibosite}{\weibo} \\
 				% See fontawesome.pdf in the fonts folder for all icons you can use
 			\end{supertabular}
 		}
@@ -234,7 +245,7 @@
 		%------------------------------------------------
 		
 		\educationentry{2014 -- 2019} % Duration
-		{工学博士} % Degree
+		{工学博士(硕博连读)} % Degree
 		{专业：通信工程} % Honours, achievements or distinctions (e.g. first class honours)
 		{} % Department
 		{北京邮电大学-智能计算与通信实验室} % Institution
@@ -247,14 +258,10 @@
 		{} % Department
 		{北京邮电大学-信息与通信工程学院} % Institution
 		
-		%------------------------------------------------
-		\educationentry{June 2019} % Duration
-		{毕业} % Degree
-		{} % Honours, achievements or distinctions (e.g. first class honours)
-		{} % Department
-		{北京邮电大学} % Institution
 	\end{supertabular}
 	
+	\medskip % Extra whitespace before the next section
+		
 	%----------------------------------------------------------------------------------------
 	%	AWARDS
 	%----------------------------------------------------------------------------------------
@@ -274,177 +281,42 @@
 		
 		%------------------------------------------------
 		
-		\tableentry{2017}{国家奖学金}{}
-		\tableentry{}{\textit{北京邮电大学智能计算与通信实验室}}{spaceafter}
+		\tableentry{2017}{研究生国家奖学金}{}
+		%\tableentry{}{\textit{北京邮电大学智能计算与通信实验室}}{spaceafter}
 		
 		%------------------------------------------------
 		
-		\tableentry{2018}{北京邮电大学博士生创新基金资助项目}{}
-		\tableentry{}{\textit{北京邮电大学智能计算与通信实验室}}{spaceafter}
+		\tableentry{2018}{北京邮电大学博士生创新基金}{}
+		%\tableentry{}{\textit{北京邮电大学智能计算与通信实验室}}{spaceafter}
 		
 		%------------------------------------------------
 		
-		\tableentry{2018}{第二届良飞奖}{}
-		\tableentry{}{\textit{北京邮电大学智能计算与通信实验室}}{spaceafter}
-		
-		%------------------------------------------------
-		
-	\end{supertabular}
-	\section{编程技能} 
-
-	% Example \tableentry{} command to add another line:
-	
-	%\tableentry{Heading}{Content}{spaceafter}
-	
-	% All 3 parameters must be supplied but any can be empty if you don't need them
-	% A "spaceafter" value in the third parameter will add some vertical space -- this is to be used between headings
-	
-	%------------------------------------------------
-	
-	\begin{supertabular}{rl} % Start a table with two columns, the table will ensure everything is aligned
-		
-		%------------------------------------------------
-		
-		\tableentry{精通}{Python\includegraphics*[width=0.019\textwidth]{python.png}, Node.js\includegraphics*[width=0.019\textwidth]{nodejs.png}}{spaceafter}
-		
-		%------------------------------------------------
-		
-		\tableentry{熟悉}{C, \CPP, MATLAB, \LaTeX, SQL,}{}
-		\tableentry{}{shell, HTML}{spaceafter}
-		
-		%------------------------------------------------
-		
-		\tableentry{了解}{Go, Rust, lisp, Javascript, Java}{spaceafter}
-		
-		%------------------------------------------------
-		
-	\end{supertabular}
-	\section{工作技能}
-	
-	% Example \longformdescription{} command to add another section:
-	
-	%\longformdescription{Heading}{Description}
-	
-	%------------------------------------------------
-	
-	\chsskillentry{\CJKfamily{skillfont} 服务架构设计}{理解架构设计原理性知识。具有一定实践经验。}
-	
-	\chsskillentry{\CJKfamily{skillfont} \textbf{Python开发能力}}{具有多年Python经验，运营着一个Python技术公众号：它不只是Python。}
-	
-	\chsskillentry{\CJKfamily{skillfont} \textbf{机器学习}}{熟悉机器学习各类算法。}
-	
-	\chsskillentry{\CJKfamily{skillfont} \textbf{研究能力}}{具有较强的独立或协作研究能力，善于发现问题，并利用合适的工具解决问题。}
-	
-	\chsskillentry{\CJKfamily{skillfont} \textbf{团队领导力}}{具有一定的团队领导能力。}
-	
-	\chsskillentry{\CJKfamily{skillfont} \textbf{写作能力}}{具有极强的文档、报告、记录、PPT写作和排版能力。}
-	
-	
-	\section{计算机技能}
-	
-	\begin{supertabular}{rl} % Start a table with two columns, the table will ensure everything is aligned
-		
-		%------------------------------------------------
-		
-		\tableentry{精通}{Microsoft Office, Git, reStructuredText,}{}
-		\tableentry{}{Markdown, Linux, vim}{}
-		\tableentry{}{HTTP, MQTT, kafka,}{}
-		\tableentry{}{ProtocolBuffer, gRPC, TLS, Locust}{}
-		\tableentry{}{Github, StackOverflow, Readthedocs}{}
-		\tableentry{}{...}{spaceafter}
-		%------------------------------------------------
-		
-		\tableentry{熟悉}{Elasticsearch, Nginx, HAProxy, Redis,}{}
-		\tableentry{}{MySQL, MongoDB, }{}
-		\tableentry{}{...}{spaceafter}
-		%------------------------------------------------
+		\tableentry{2018}{第二届实验室良飞奖(1人/年)}{}
+		%\tableentry{}{\textit{北京邮电大学智能计算与通信实验室}}{spaceafter}
 		
 		%------------------------------------------------
 		
 	\end{supertabular}
 	
-	%----------------------------------------------------------------------------------------
-	%	COMPUTER SKILLS
-	%----------------------------------------------------------------------------------------
+	\medskip
 
+	\section{个人技能}
 	
-	\section{英语技能}
-	
-	% Example \tableentry{} command to add another line:
-	
-	%\tableentry{Heading}{Content}{spaceafter}
-	
-	% All 3 parameters must be supplied but any can be empty if you don't need them
-	% A "spaceafter" value in the third parameter will add some vertical space -- this is to be used between headings
-	
-	%------------------------------------------------
-	具有熟练地\textbf{听、说、读、写}英语的能力
-	
-	%----------------------------------------------------------------------------------------
-	%	SKILLS DESCRIPTION
-	%----------------------------------------------------------------------------------------
-	
-	
-	
-	%----------------------------------------------------------------------------------------
-	%	PUBLICATIONS
-	%----------------------------------------------------------------------------------------
-
-		
-	\switchcolumn
-	\section{预期职位}
-	
-	\begin{enumerate}[font=\color{headings}\bfseries] % Start a table with two columns, the table will ensure everything is aligned
-		
-		%------------------------------------------------
-		
-		\item 物联网相关(智慧城市等)工程或研究性岗位
-		
-		%------------------------------------------------
-		
-		\item Python相关研发或项目管理岗位
+	\begin{enumerate}
+		\item 开发能力：具有多年Python开发经验，并运营着Python技术公众号，目前500人关注；熟悉Node.js底层异步I/O与事件驱动原理，并有大量Node.js实践经验；具有一定的C/\CPP 等其他语言开发经验等；
+		\item Linux系统：能够熟练使用Linux系统；
+		\item 机器学习：熟悉各类机器学习算法，包括底层数学原理。博士论文主要以增强学习为主要工具完成。近期将切入实验室自然语言处理相关项目组任团队领导。
+		\item 服务架构设计：熟悉服务架构设计理论，包括分布式系统架构设计方法论，实现技术体系等；具有一定的软件工程知识和项目管理能力。
+		\item 团队协作能力：能够同团队人员高效协作；熟悉Git, JIRA等团队协作工具。
+		\item 团队领导能力：具有一定的团队领导能力，能够融入团队，知人善任，能够合理分配任务，具有亲和力。
+		\item 写作能力：具有极强的文档、报告、记录编写及排版能力。
+		\item 学习能力：具有极强的学习能力，善于运用各类工具，抽钉拔楔，澄源正本。
 	\end{enumerate}
-	%------------------------------------------------
-	\section{已发表论文}
+
+	\section{自我评价}
 	
-	% Example \longformdescription{} command to add another publication:
-	
-	%\longformpublication{Reference (format this manually as desired)}
-	
-	%------------------------------------------------
-	%\renewcommand{\labelenumi}{\theenumi}
-	%\renewcommand{\theenumi}{\roman{enumi}}
-	\begin{enumerate}[font=\color{headings}\bfseries]
-		
-		\item \longformpublication{\textbf{Lu Hou}, Shaohang Zhao, Xiong Xiong, Kan Zheng, Periklis Chatzimisios, M. Shamim Hossain, Wei Xiang, ``Internet of things cloud: architecture and implementation,'' \textit{IEEE Communications Magazine}, vol. 54, no. 12, Dec. 2016, pp. 32-39. \IF{10.435}}
-		
-		\item \longformpublication{\textbf{Lu Hou}, Shaohang Zhao, Xing Li, Periklis Chatzimisios, Kan Zheng, ``Design and implementation of application programming interface for Internet of things cloud,'' \textit{International Journal of Network Management}, vol. 27, no. 3, June 2016. \IF{1.118}}
-		
-		\item \longformpublication{\textbf{Lu Hou}, Kan Zheng, Periklis Chatzimisios, Yi Feng, ``A continuous-time Markov decision process-based resource allocation scheme in vehicular cloud for mobile video services,'' \textit{Computer Communications}, vol. 118, Mar. 2018, pp. 140-147. \IF{3.338}}
-		
-		\item \longformpublication{\textbf{Lu Hou}, Lei Lei, Kan Zheng, ``Design on publish/subscribe message dissemination for vehicular networks with mobile edge computing,'' \textit{2017 IEEE GLOBECOM}, Dec. 2017}
-		
-		\item \longformpublication{\textbf{Lu Hou}, Lei Lei, Kan Zheng, Xianbin Wang, ``A Q-learning based Proactive Caching Strategy for Non-safety Related Services in Vehicular Networks,'' \textit{IEEE Internet of Things Journal}, \textbf{Under review}}
-		
-		\item \longformpublication{Kan Zheng, \textbf{Lu Hou}, Hanling Meng, Qiang Zheng, Ning Lu, Lei Lei, ``Soft-defined heterogeneous vehicular network: architecture and challenges,'' \textit{IEEE Network}, vol. 30, no. 4, July 2016, pp. 72-80.\IF{7.23}}
-		
-		\item \longformpublication{Xiong Xiong, \textbf{Lu Hou}, Kan Zheng, Wei Xiang, M. Shamim Hossain, and Sk Md Mizanur Rahman, ``SMDP-based radio resource allocation scheme in software-defined internet of things networks,'' \textit{IEEE Sensors Journal} vol. 16, no. 20, June 2016, pp. 7304-7314. \IF{2.512}}
-		
-		\item \longformpublication{Xiong Xiong, \textbf{Lu Hou}, Long Zhao, ``A Group-Based Massive Multiple Access Scheme in Cellular M2M Networks,'' \textit{Computer Communications}, vol. 121, May. 2018, pp. 44-49. \IF{3.338}}
-	\end{enumerate}			
-	% As an alternative to a long-form publication list, you can create a shorter summary using only DOI values and years.
-	
-	% Example \doipublication{} command to add another publication:
-	
-	%\doipublication{Year}{DOI}{firstauthor}{spaceafter}
-	
-	% All four parameters are required (can be empty though)
-	% A value of "firstauthor" in the third parameter will print the DOI in bold
-	% A "spaceafter" value in the fourth parameter will add some vertical space -- this is to be used between years
-	
-	%------------------------------------------------
-	
-	\medskip % Extra whitespace before the next section
+	本人性格开朗，平易近人，善于沟通，幽默风趣，待人热情真诚。博士期间认真负责，不惧挑战，善于为老师分担压力，善于倾听。本人在博士期间培养了较强的自我学习与解决问题能力，团队协作与管理能力和项目管理能力。最后，本人具备较好的英文能力，能够熟练地听、说、读、写。
+
 	
 	%----------------------------------------------------------------------------------------
 	
@@ -462,7 +334,7 @@
 \parbox[top][0.12\textheight][c]{\linewidth}{ % Parbox to hold the author name and CV text; fixed height to match the coloured box to the right, centred vertically and full line width
 	\vspace{-0.04\textheight} % Reduce whitespace above the parbox to separate it from the main content
 	\centering % Centre text
-	{\Huge Lu Hou}\hspace{1pt} \faMars\\\medskip % Your name
+	{\Huge Lu Hou}\hspace{1pt} \\\medskip % Your name
 	{\Huge\color{headings}\cvtextfont Curriculum Vitae}
 }
 
@@ -522,18 +394,18 @@ My research mainly focuses on the resource management issues in multi-layer clou
 %----------------------------------------------------------------------------------------
 %	AWARDS
 %----------------------------------------------------------------------------------------
-\section{Expected position}
-
-\begin{enumerate}[font=\color{headings}\bfseries] % Start a table with two columns, the table will ensure everything is aligned
-	
-	%------------------------------------------------
-	
-	\item Engineering or researching position on IoT(such as Smart City).
-	
-	%------------------------------------------------
-	
-	\item Python related Development or project management position.
-\end{enumerate}
+%\section{Expected position}
+%
+%\begin{enumerate}[font=\color{headings}\bfseries] % Start a table with two columns, the table will ensure everything is aligned
+%	
+%	%------------------------------------------------
+%	
+%	\item Engineering or researching position on IoT(such as Smart City).
+%	
+%	%------------------------------------------------
+%	
+%	\item Python related Development or project management position.
+%\end{enumerate}
 
 \section{Awards}
 
@@ -632,16 +504,10 @@ Able to \emph{Listen}, \emph{Speak}, \emph{Read} and \emph{Write} English skillf
 	\vspace{-0.04\textheight} % Reduce whitespace above the parbox to separate it from the main content
 	\colorbox{shade}{ % Create the coloured box
 		\begin{supertabular}{p{0.05\linewidth}|p{0.775\linewidth}} % Start a table with two columns, the table will ensure everything is aligned
-			\raisebox{-1pt}{\faHome} & No. 10, Xitucheng Road, Beijing \\ % Address
 			\raisebox{-1pt}{\faPhone} & +86-15501081468 \\ % Phone number
 			\raisebox{0pt}{\small\faEnvelope} & \href{mailto:houlu8674@bupt.edu.cn}{houlu8674@bupt.edu.cn} \\ % Email address
 			\raisebox{-1pt}{\small\faDesktop} & \href{https://www.houlu.me}{https://www.houlu.me} \\ % Website
 			\raisebox{-1pt}{\faGithub} & \href{https://github.com/houluy}{https://github.com/houluy} \\ % GitHub profile
-			\raisebox{-1pt}{\faLinkedinSquare} & \href{https://www.linkedin.com/in/username}{https://www.linkedin.com/in/houlu} \\ % LinkedIn profile
-			\raisebox{-1pt}{\faWechat} &
-			guaguade\\
-			\raisebox{-1pt}{\faWeibo} &
-			\href{http://weibo.com/lucima}{astroooooo}\\
 			% See fontawesome.pdf in the fonts folder for all icons you can use
 		\end{supertabular}
 	}

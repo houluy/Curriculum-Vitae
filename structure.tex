@@ -32,8 +32,8 @@
 \usepackage{geometry} % Required for adjusting page dimensions and margins
 
 \geometry{
-	hmargin=1.5cm, % Horizontal margin
-	vmargin=1.75cm, % Vertical margin
+	hmargin=1.0cm, % Horizontal margin
+	vmargin=1.0cm, % Vertical margin
 	a4paper, % Paper size, change to letterpaper for US letter size
 	%showframe, % Uncomment to show how the type block is set on the page -- typically for debugging
 }
@@ -134,8 +134,8 @@ SmallCapsFont=*-SC.ttf
 \newcommand{\chsworkposition}[5]{
 	{\raggedright\textsc{\textbf{#1}\expandafter\ifstrequal\expandafter{#2}{}{}{\hspace{6pt}\footnotesize{(#2)}}}\par} % Duration and conditional full time/part time text
 	\expandafter\ifstrequal\expandafter{#3}{}{}{{\raggedright\large #3}\\} % Employer
-	\expandafter\ifstrequal\expandafter{#4}{}{}{{\raggedright #4}\\[4pt]} % Job title
-	\expandafter\ifstrequal\expandafter{#5}{}{}{#5\\} % Description
+	\expandafter\ifstrequal\expandafter{#4}{}{}{{\raggedright #4}} % Job title
+	\expandafter\ifstrequal\expandafter{#5}{}{}{#5} % Description
 }
 
 % Command for entering a separate qualification
