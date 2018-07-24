@@ -28,6 +28,8 @@
 \usepackage{xeCJK}
 \usepackage{graphicx}
 \usepackage{enumitem}
+\usepackage[bottom]{footmisc}
+\usepackage{endnotes}
 
 \graphicspath{{logos/}}
 
@@ -42,17 +44,14 @@
 \newcommand{\weibosite}{http://weibo.com/lucima}
 \newcommand{\weibo}{astroooooo}
 \newcommand{\IF}[1]{\textcolor{Maroon}{(IF = #1)}}
+%\setfamilyfont{ennamefont}[Path=fonts/]{monofur}
 \setCJKmainfont[Path=fonts/]{fzlthjt}
 \setCJKfamilyfont{cvchsfamilyfont}[Path=fonts/]{fzybxs}
 \setCJKfamilyfont{skillfont}[Path=fonts/, Scale=1.2]{fzzyjt}
 \setCJKfamilyfont{titlefont}[Path=fonts/, Scale=0.95]{fzlb}
+\setCJKfamilyfont{namefont}[Path=fonts/, Scale=1.5]{fzst}
+\newcommand{\red}[1]{{\color{headings}{#1}}}
 \input{structure.tex} % Include the file that specifies the document structure
-
-% Headers and footers can be added with the \lhead{} \rhead{} \lfoot{} \rfoot{} commands
-% Example right footer:
-%\rfoot{\color{headings}{\sffamily Last update: \today. Typeset with Xe\LaTeX}}
-
-%----------------------------------------------------------------------------------------
 
 \begin{document}
 
@@ -65,167 +64,12 @@
 	\parbox[top][0.12\textheight][c]{\linewidth}{ % Parbox to hold the author name and CV text; fixed height to match the coloured box to the right, centred vertically and full line width
 		\vspace{-0.04\textheight} % Reduce whitespace above the parbox to separate it from the main content
 		\centering % Centre text
-		{\Huge 侯 璐}\\\medskip % Your name
+		{\Huge{\CJKfamily{namefont} 侯 璐}}\\\medskip % Your name
 		{\Huge\color{headings}{\CJKfamily{cvchsfamilyfont} 个人简历}}
 	}
-	
 	%----------------------------------------------------------------------------------------
 	%	MAJOR RESEARCH PROJECT
 	%----------------------------------------------------------------------------------------
-	
-	\section{核心项目经历}
-	
-	% Blank \workposition command to add another job:
-	
-	%\workposition{} % Duration
-	%{} % FT/PT (full time or part time)
-	%{} % Employer
-	%{} % Job title
-	%{} % Description
-	
-	% All 5 parameters must be supplied but any can be empty if you don't need them
-	
-	%------------------------------------------------
-	\chsworkposition{} % Duration
-	{} % FT/PT (full time or part time)
-	{1. \textbf{LoRaWAN\texttrademark} 系统设计与实现(Oct. 2017 -- Now)} % Employer
-	{\CJKfamily{titlefont} 团队领导人} % 
-	{\begin{enumerate}
-		\item 项目进度管理，需求分析与功能拆分，团队人员分工等。领导团队设计实现了基于LoRaWAN\texttrademark 协议的整套云服务系统，包括自适应数据速率(ADR)算法设计等；
-		\item 整体架构设计。独立设计了分布式系统架构。
-		
-		\item 整体方案设计。独立完成了实现方案设计，包括代码仓库架构，代码风格统一，Code Review等。
-		
-		\item 核心模块编写。独立完成了MAC层消息解析封装、设备注册两大核心模块的编写。
-		
-		\item 文档编写。独立完成文档模板设计，领导团队完成文档编写，内容审核修改等。
-		
-		\item 功能测试。独立利用Python实现了LoRaWAN\texttrademark 设备模拟程序，可用于功能性测试。
-	\end{enumerate}
-	主要开发语言——Node.js，Python。}  % Description
-	\par\noindent\rule{0.53\textwidth}{0.4pt}
-	%------------------------------------------------
-	
-	\chsworkposition{} % Duration
-	{} % FT/PT (full time or part time)
-	{2. 物联网云平台设计与实现(Sep. 2016 -- Now)} % Employer
-	{\CJKfamily{titlefont} 副团队领导人} % 
-	{\begin{enumerate}
-		\item 参与团队云平台架构设计，完成论文产出$^{[1]}$。
-		\item 独立完成服务端安全方案设计与实现。为平台设计并实现了加密、鉴权、OAuth2.0认证、权限管理等安全机制；
-		\item 独立完成亚马逊\faAmazon Alexa服务接入（语句设计，接口开发等）；
-		\item 独立完成Elasticsearch全文搜索引擎搭建与接口开发; 数据清理，数据初始化脚本开发;
-		\item 参与团队部署、运维、功能测试、性能测试；
-		\end{enumerate}
-	主要开发语言——Node.js, Python。}  % Description
-		
-	\par\noindent\rule{0.53\textwidth}{0.4pt}
-	%------------------------------------------------
-
-	
-	\chsworkposition{} % Duration
-	{} % FT/PT (full time or part time)
-	{3. 车联网资源分配算法研究(Sep. 2015 -- Now)} % Employer
-	{\CJKfamily{titlefont} 个人研究}\\ % Job title
-	{\raggedright\textbf{博士论文：``面向车联网的移动云网络资源管理与优化研究''}，来自``\textit{国家自然科学基金项目}''。
-	针对车联网相关业务，利用机器学习等理论工具，研究分层云计算车联网中的资源管理问题。并参与了多个自然基金项目及横向研究性项目。主要算法：动态规划与机器学习。主要开发语言：Python，工具：Jupyter等。} % Description
-	
-	%------------------------------------------------
-	
-	%\vspace{-\baselineskip}\medskip % Standardise the whitespace after this section and before the next (the custom command adds too much otherwise)
-	
-	
-	%----------------------------------------------------------------------------------------
-	%	REFERENCES
-	%----------------------------------------------------------------------------------------
-	
-	%\section{个人简介}
-	%
-	%%\textit{References available on request}
-	%
-	%%------------------------------------------------
-	%
-	%% Example \tableentry{} command to add another line:
-	%
-	%%\tableentry{Heading}{Content}{spaceafter}
-	%
-	%% All 3 parameters must be supplied but any can be empty if you don't need them
-	%% A "spaceafter" value in the third parameter will add some vertical space -- this is to be used between headings
-	%
-	%%------------------------------------------------
-	%
-	%\begin{supertabular}{rl} % Start a table with two columns, the table will ensure everything is aligned
-	%	
-	%	%------------------------------------------------
-	%	
-	%	\tableentry{}{\textbf{}}{spaceafter}
-	%	\tableentry{学位}{}{博士}
-	%	%\tableentry{Employer}{\href{http://web.mit.edu/physics/}{Department of Physics}}{}
-	%	\tableentry{}{\href{https://web.mit.edu}{\textit{Massachusetts Institute of Technology}}}{spaceafter}
-	%	\tableentry{Phone}{+1 (617) 253 1000 x5322 (Work)}{}
-	%	\tableentry{Mobile}{+1 (232) 842-3583}{}
-	%	
-	%	%------------------------------------------------
-	%	
-	%	\tableentry{}{}{} % Creates some additional whitespace between the references
-	%	
-	%	%------------------------------------------------
-	%	
-	%	\tableentry{}{\textbf{Dr. Eli Vance}}{spaceafter}
-	%	\tableentry{Position}{Scientist (HL1)}{}
-	%	\tableentry{Employer}{\href{http://www.bmrf.us}{Black Mesa Research Facility}}{spaceafter}
-	%	\tableentry{Email}{\href{mailto:e.vance@bmrf.us}{e.vance@bmrf.us}}{}
-	%	\tableentry{Phone}{+1 (800) 786-1410 x6235 (Work)}{}
-	%	\tableentry{Mobile}{+1 (201) 632-3901}{}
-	%	
-	%	%------------------------------------------------
-	%	
-	%\end{supertabular}
-	
-	\medskip % Extra whitespace before the next section
-	
-	%----------------------------------------------------------------------------------------
-	
-	
-	\section{计算机技能} 
-	
-	%------------------------------------------------
-	
-	\begin{supertabular}{rl} % Start a table with two columns, the table will ensure everything is aligned
-		
-		%------------------------------------------------
-		
-		\tableentry{精通}{Python\includegraphics*[width=0.019\textwidth]{python.png}, Node.js\includegraphics*[width=0.019\textwidth]{nodejs.png}}{spaceafter}
-		
-		%------------------------------------------------
-		
-		\tableentry{熟悉}{C, \CPP, MATLAB, \LaTeX, SQL, shell, HTML}{}
-		
-		%------------------------------------------------
-		
-	\end{supertabular}
-
-	%----------------------------------------------------------------------------------------
-	%	COLOURED CONTACT DETAILS BOX
-	%----------------------------------------------------------------------------------------
-	\switchcolumn % Switch to the next paracol column
-	\parbox[top][0.12\textheight][c]{\linewidth}{ % Parbox to hold the colour box; fixed height to match the name/CV text to the left, centred vertically and full line width
-		\vspace{-0.04\textheight} % Reduce whitespace above the parbox to separate it from the main content
-		\colorbox{shade}{ % Create the coloured box
-			\begin{supertabular}{p{0.05\linewidth}|p{0.775\linewidth}} % Start a table with two columns, the table will ensure everything is aligned
-				\raisebox{-1pt}{\faPhone} & +86-15501081468 \\ % Phone number
-				\raisebox{0pt}{\small\faEnvelope} & \href{mailto:\email}{\email} \\ % Email address
-				\raisebox{-1pt}{\small\faDesktop} & \href{\website}{\website} \\ % Website
-				\raisebox{-1pt}{\faGithub} & \href{\github}{\github} \\ % GitHub profile
-				% See fontawesome.pdf in the fonts folder for all icons you can use
-			\end{supertabular}
-		}
-	}
-	
-	%----------------------------------------------------------------------------------------
-	%	EDUCATION
-	%----------------------------------------------------------------------------------------
-	
 	\section{教育经历} 
 	
 	% Blank \educationentry{} command to add another degree:
@@ -258,10 +102,18 @@
 		{} % Department
 		{北京邮电大学-信息与通信工程学院} % Institution
 		
-	\end{supertabular}
-	
-	\medskip % Extra whitespace before the next section
+		\educationentry{论文情况}
+		{已发表\textcolor{Maroon}{7}篇}
+		{\textcolor{Maroon}{1}作\textcolor{Maroon}{4}篇，\textcolor{Maroon}{3}篇\textcolor{Maroon}{SCI}，\textcolor{Maroon}{1}篇\textcolor{Maroon}{EI}}
+		{}
+		{最高影响因子\IF{10.435}}
+		%一区\textit{IEEE Communications Magazine}}
 		
+		
+	\end{supertabular}
+
+	\medskip % Extra whitespace before the next section
+	
 	%----------------------------------------------------------------------------------------
 	%	AWARDS
 	%----------------------------------------------------------------------------------------
@@ -286,12 +138,12 @@
 		
 		%------------------------------------------------
 		
-		\tableentry{2018}{北京邮电大学博士生创新基金}{}
+		\tableentry{2018}{北京邮电大学博士生创新基金}
 		%\tableentry{}{\textit{北京邮电大学智能计算与通信实验室}}{spaceafter}
 		
 		%------------------------------------------------
 		
-		\tableentry{2018}{第二届实验室良飞奖(1人/年)}{}
+		\tableentry{2018}{第二届实验室良飞奖(\textcolor{Maroon}{1人/年})}{}
 		%\tableentry{}{\textit{北京邮电大学智能计算与通信实验室}}{spaceafter}
 		
 		%------------------------------------------------
@@ -299,26 +151,100 @@
 	\end{supertabular}
 	
 	\medskip
-
+	
 	\section{个人技能}
 	
-	\begin{enumerate}
-		\item 开发能力：具有多年Python开发经验，并运营着Python技术公众号，目前500人关注；熟悉Node.js底层异步I/O与事件驱动原理，并有大量Node.js实践经验；具有一定的C/\CPP 等其他语言开发经验等；
-		\item Linux系统：能够熟练使用Linux系统；
-		\item 机器学习：熟悉各类机器学习算法，包括底层数学原理。博士论文主要以增强学习为主要工具完成。近期将切入实验室自然语言处理相关项目组任团队领导。
-		\item 服务架构设计：熟悉服务架构设计理论，包括分布式系统架构设计方法论，实现技术体系等；具有一定的软件工程知识和项目管理能力。
-		\item 团队协作能力：能够同团队人员高效协作；熟悉Git, JIRA等团队协作工具。
-		\item 团队领导能力：具有一定的团队领导能力，能够融入团队，知人善任，能够合理分配任务，具有亲和力。
-		\item 写作能力：具有极强的文档、报告、记录编写及排版能力。
-		\item 学习能力：具有极强的学习能力，善于运用各类工具，抽钉拔楔，澄源正本。
+	\begin{enumerate}[font=\color{headings}\bfseries]
+		\item \red{开发能力：}热爱Python\includegraphics*[width=0.019\textwidth]{python.png}开发，具有多年Python开发经验，并运营着Python技术公众号；熟悉Node.js\includegraphics*[width=0.019\textwidth]{nodejs.png}底层异步I/O与事件驱动原理，并有大量Node.js实践经验；具有一定的C/\CPP 等其他语言开发经验等。
+		\item \red{机器学习：}热爱机器学习，熟悉各类机器学习算法，包括底层数学原理。近期将切入实验室自然语言处理相关项目组任项目负责人。
+		\item \red{服务架构设计：}熟悉服务架构设计理论，包括分布式系统架构设计方法论，实现技术体系等；具有一定的软件工程知识，熟悉RESTful风格。
+		\item \red{互联网安全：}熟悉TLS安全机制、OAuth2.0认证机制等，具备一定的互联网安全相关知识。
+		\item \red{区块链：}熟悉区块链底层原理、以太坊智能合约，具有一定的Hyperledger Fabric搭建经验。
+		\item \red{Linux系统：}具有丰富linux系统开发经验。
+		\item \red{团队协作能力：}能够同团队人员高效协作。
+		\item \red{团队领导能力：}具有一定的团队领导能力，能够融入团队，知人善任，能够合理分配任务，具有亲和力。
+		\item \red{工作责任心：}具有极强责任心，工作认真细致，能够吃苦耐劳，承担各项事宜并按时按量交付。
+		\item \red{写作能力：}具有极强的文档、报告、记录编写及排版能力。
+		\item \red{学习能力：}具有极强的学习能力，探索能力和求知欲，善于运用各类工具，抽钉拔楔，澄源正本，乐于接触新鲜前沿的知识。
+		\item \red{英文能力：}具备较好的英文能力，能够熟练地听、说、读、写。
 	\end{enumerate}
-
-	\section{自我评价}
 	
-	本人性格开朗，平易近人，善于沟通，幽默风趣，待人热情真诚。博士期间认真负责，不惧挑战，善于为老师分担压力，善于倾听。本人在博士期间培养了较强的自我学习与解决问题能力，团队协作与管理能力和项目管理能力。最后，本人具备较好的英文能力，能够熟练地听、说、读、写。
+	\switchcolumn
+	\parbox[top][0.12\textheight][c]{\linewidth}{ % Parbox to hold the colour box; fixed height to match the name/CV text to the left, centred vertically and full line width
+		\vspace{-0.04\textheight} % Reduce whitespace above the parbox to separate it from the main content
+		\colorbox{shade}{ % Create the coloured box
+			\begin{supertabular}{p{0.05\linewidth}|p{0.775\linewidth}} % Start a table with two columns, the table will ensure everything is aligned
+				\raisebox{-1pt}{\faPhone} & +86-15501081468 \\ % Phone number
+				\raisebox{0pt}{\small\faEnvelope} & \href{mailto:\email}{\email} \\ % Email address
+				\raisebox{-1pt}{\small\faDesktop} & \href{\website}{\website} \\ % Website
+				\raisebox{-1pt}{\faGithub} & \href{\github}{\github} \\ % GitHub profile
+				% See fontawesome.pdf in the fonts folder for all icons you can use
+			\end{supertabular}
+		}
+	}
 
+	\section{核心项目经历}
 	
-	%----------------------------------------------------------------------------------------
+	% Blank \workposition command to add another job:
+	
+	%\workposition{} % Duration
+	%{} % FT/PT (full time or part time)
+	%{} % Employer
+	%{} % Job title
+	%{} % Description
+	
+	% All 5 parameters must be supplied but any can be empty if you don't need them
+	
+	%------------------------------------------------
+	\chsworkposition{} % Duration
+	{} % FT/PT (full time or part time)
+	{\red{I. LoRaWAN\texttrademark 系统设计与实现}}%(Oct. 2017 -- Now)} % Employer
+	{\CJKfamily{titlefont} 项目负责人} % 
+	{\begin{enumerate}[font=\color{headings}\bfseries]
+		\item 负责项目进度管理，需求分析与功能拆分，小组人员分工等。领导小组设计实现了基于LoRaWAN\texttrademark 协议的云服务系统，包括自适应数据速率(ADR)算法设计等；
+		\item 整体架构设计。独立设计了分布式系统架构。
+		
+		\item 整体方案设计。独立完成了实现方案设计，包括代码仓库架构，代码风格统一，Code Review等。
+		
+		\item 核心模块编写。独立完成了MAC层消息解析封装、设备注册两大核心模块的编写。
+		
+		\item 文档编写。独立完成文档模板设计，领导小组完成文档编写，内容审核修改等。
+		
+		\item 功能测试。独立利用Python实现了LoRaWAN\texttrademark 设备模拟程序及错误数据发送程序，用于系统功能性测试。
+	\end{enumerate}
+	主要开发语言——Node.js，Python。\\
+	产品网站: \hyperref[https://www.xisiot.com/]{https://www.xisiot.com/}}  % Description
+	\red{\par\noindent\rule{0.48\textwidth}{0.4pt}}
+	
+	%------------------------------------------------
+	
+	\chsworkposition{} % Duration
+	{} % FT/PT (full time or part time)
+	{\red{II. \textbf{物联网云平台设计与实现}}}%(Sep. 2016 -- Now)} % Employer
+	{\CJKfamily{titlefont} 副项目负责人} % 
+	{\begin{enumerate}[font=\color{headings}\bfseries]
+		\item 参与团队云平台架构设计，完成论文产出（杂志：\emph{IEEE Communications Magazine}）。
+		\item 独立完成服务端安全方案设计与实现。为平台设计并实现了加密、鉴权、OAuth2.0认证、权限管理等安全机制；
+		\item 独立完成\faAmazon 亚马逊Alexa服务接入（语句设计，接口开发等），已发布的Skill：MHaSa；
+		\item 独立完成Elasticsearch全文搜索引擎搭建与接口开发; 利用Python进行数据清理，数据初始化及Elasticsearch监控;
+		\item 参与团队部署、运维、功能测试、性能测试；
+		\end{enumerate}
+	主要开发语言——Node.js, Python。}  % Description
+	\red{\par\noindent\rule{0.48\textwidth}{0.4pt}}
+	%------------------------------------------------
+	
+	\chsworkposition{} % Duration
+	{} % FT/PT (full time or part time)
+	{\red{III. \textbf{车联网资源分配算法研究}}}%(Sep. 2015 -- Now)} % Employer
+	{\CJKfamily{titlefont} 个人}\\ % Job title
+	{\raggedright\textbf{博士论文：``面向车联网的移动云网络资源管理与优化研究''}，来自``\textit{国家自然科学基金项目}''。
+	针对车联网相关业务，利用机器学习等理论工具，研究分层云计算车联网中的通信资源、计算资源与存储资源管理问题。并参与了多个自然基金项目及横向研究性项目。已发表相关论文两篇，另有一篇论文进入二审阶段。}
+
+	主要算法：动态规划与机器学习。\\
+	主要开发语言：Python。\\
+	工具：Jupyter，TensorFlow等。 % Description
+	
+	\medskip % Extra whitespace before the next section
 	
 \end{paracol}
 
@@ -334,35 +260,9 @@
 \parbox[top][0.12\textheight][c]{\linewidth}{ % Parbox to hold the author name and CV text; fixed height to match the coloured box to the right, centred vertically and full line width
 	\vspace{-0.04\textheight} % Reduce whitespace above the parbox to separate it from the main content
 	\centering % Centre text
-	{\Huge Lu Hou}\hspace{1pt} \\\medskip % Your name
+	{\Huge\cvtextfont Lu Hou}\hspace{1pt} \\\medskip % Your name
 	{\Huge\color{headings}\cvtextfont Curriculum Vitae}
 }
-
-%----------------------------------------------------------------------------------------
-%	MAJOR RESEARCH PROJECT
-%----------------------------------------------------------------------------------------
-
-\section{Doctoral Research}
-
-{\raggedright\textbf{``Research on Resource Management and Optimization of Mobile Cloud Networks for Internet of Vehicles" from \textit{The National Natural Science Foundation of China}}\\\medskip}
-
-My research mainly focuses on the resource management issues in multi-layer cloud based Internet of Vehicles (IoV). Aiming at the features of IoV traffic, I proposed some key algorithms for resources optimization of communications, computing and storage with the help convex optimization, machine learning, etc.
-
-\medskip % Extra whitespace before the next section
-
-%----------------------------------------------------------------------------------------
-%	WORK EXPERIENCE
-%----------------------------------------------------------------------------------------
-\section{Major Research Directions}
-	\begin{supertabular}{rl}
-		\tableentry{Internet of Things Cloud}{Architecture designs, implementations}{}
-		\tableentry{}{and performance optimizations.}{spaceafter}
-		\tableentry{LoRaWAN\texttrademark \space \space Systems}{Protocol analysis, Architecture designs}{}
-		\tableentry{}{implementations and }{}
-		\tableentry{}{performance optimizations.}{spaceafter}
-		\tableentry{Vehicular Networks}{Resource management of}{}
-		\tableentry{}{cloud based vehicular networks}{spaceafter}
-	\end{supertabular}
 
 \section{Education} 
 \begin{supertabular}{rl} % Start a table with two columns, the table will ensure everything is aligned
@@ -371,42 +271,30 @@ My research mainly focuses on the resource management issues in multi-layer clou
 	
 	\educationentry{2014 -- 2019} % Duration
 	{Doctor of Philosophy} % Degree
-	{Communications Engineering} % Honours, achievements or distinctions (e.g. first class honours)
-	{Intell. Comput. and Commun. Lab} % Department
+	{}%Communications Engineering} % Honours, achievements or distinctions (e.g. first class honours)
+	{}%Intell. Comput. and Commun. Lab} % Department
 	{Beijing Univ. of Posts and Telecom.} % Institution
 	
 	%------------------------------------------------
 	
 	\educationentry{2010 -- 2014} % Duration
 	{Bachelor of Engineering} % Degree
-	{Communications Engineering} % Honours, achievements or distinctions (e.g. first class honours)
-	{School of Inform. and Commun. Eng.} % Department
+	{}%Communications Engineering} % Honours, achievements or distinctions (e.g. first class honours)
+	{}%School of Inform. and Commun. Eng.} % Department
 	{Beijing Univ. of Posts and Telecom.} % Institution
 	
 	%------------------------------------------------
-	\educationentry{June 2019} % Duration
-	{Graduation}% Degree
+	\educationentry{Publications} % Duration
+	{7 papers in total(4 for first author)}% Degree
 	{} % Honours, achievements or distinctions (e.g. first class honours)
-	{} % Department
-	{Beijing Univ. of Posts and Telecom.} % Institution
+	{Highest IF \IF{10.435}} % Department
+	{JCR Q1. \textit{IEEE Commun. Mag.}} % Institution
 \end{supertabular}
 
+\medskip
 %----------------------------------------------------------------------------------------
-%	AWARDS
+%	MAJOR RESEARCH PROJECT
 %----------------------------------------------------------------------------------------
-%\section{Expected position}
-%
-%\begin{enumerate}[font=\color{headings}\bfseries] % Start a table with two columns, the table will ensure everything is aligned
-%	
-%	%------------------------------------------------
-%	
-%	\item Engineering or researching position on IoT(such as Smart City).
-%	
-%	%------------------------------------------------
-%	
-%	\item Python related Development or project management position.
-%\end{enumerate}
-
 \section{Awards}
 
 % Example \tableentry{} command to add another line:
@@ -423,26 +311,47 @@ My research mainly focuses on the resource management issues in multi-layer clou
 	%------------------------------------------------
 	
 	\tableentry{2017}{\textbf{China National Scholarship}}{}
-	\tableentry{}{\textit{Intell. Comput. and Commun. Lab}}{}
-	\tableentry{}{\textit{Beijing Univ. of Posts and Telecom.}}{spaceafter}
-	
+
 	%------------------------------------------------
 	\tableentry{2018}{\textbf{BUPT Excellent Ph.D. Students Foundation}}{}
-	\tableentry{}{\textit{Intell. Comput. and Commun. Lab}}{}
-	\tableentry{}{\textit{Beijing Univ. of Posts and Telecom.}}{spaceafter}
+
 	%------------------------------------------------
 	
-	\tableentry{2018}{\textbf{$2^{th}$ LiangFei Scholarship}}{}
-	\tableentry{}{\textit{Intell. Comput. and Commun. Lab}}{}
-	\tableentry{}{\textit{Beijing Univ. of Posts and Telecom.}}{spaceafter}
+	\tableentry{2018}{\textbf{$2^{th}$ LiangFei Scholarship} (One student each year}
 	
 	%------------------------------------------------
 	
 \end{supertabular}
 
-\section{English Skills}
+\medskip
 
-Able to \emph{Listen}, \emph{Speak}, \emph{Read} and \emph{Write} English skillfully.
+\section{Personal Skills}
+
+\longformdescription{\red{Developing ability}}{Strong passion on Python\includegraphics*[width=0.019\textwidth]{python.png} developing. Several years of Python experience. Running an open techblog on WeChat. Know Node.js\includegraphics*[width=0.019\textwidth]{nodejs.png} well in term with asynchronous I/O and concept of event driven. Rich experience on Node.js development.}
+
+\longformdescription{\red{Machine learning}}{Strong passion on machine learning. Good at different kinds of algorithms, especially mathematical theories.}
+
+\longformdescription{\red{Service architecture}}{Familiar with design theory of service architecture. Have knowledge on architecture design and practical experience.}
+
+\longformdescription{\red{Internet Security}}{Familiar with some security mechanisms such as TLS and OAuth2.0.}
+
+\longformdescription{\red{Blockchain}}{Familiar with the law of blockchain and the smart contract of Ethereum. Have some experience on building Hyperledger Fabric network.}
+
+\longformdescription{\red{Teamwork}}{Good at efficient collaboration with teammates.}
+
+\longformdescription{\red{Team leading}}{Have some ability of leading, knowing people and assigning works in a rational manner.}
+
+\longformdescription{\red{Working Responsibility}}{Have strong responsibilities on work. Hardworking with carefulness and on-time delivery.}
+
+\longformdescription{\red{Writing}}{Very strong ability of writing documents, reports, records and PPTs.}
+
+\longformdescription{\red{Learning ability}}{Very strong ability of learning and researching. Good at utilizing tools to solve problems. Happy to be engaged in frontier knowledge.}
+
+%\longformdescription{English}{Good at English, able to \emph{Listen}, \emph{Speak}, \emph{Read} and \emph{Write} English skillfully.}
+
+% Extra whitespace before the next section
+
+\switchcolumn
 %----------------------------------------------------------------------------------------
 %	REFERENCES
 %----------------------------------------------------------------------------------------
@@ -493,8 +402,7 @@ Able to \emph{Listen}, \emph{Speak}, \emph{Read} and \emph{Write} English skillf
 %\medskip % Extra whitespace before the next section
 
 %----------------------------------------------------------------------------------------
-
-\switchcolumn % Switch to the next paracol column
+% Switch to the next paracol column
 
 %----------------------------------------------------------------------------------------
 %	COLOURED CONTACT DETAILS BOX
@@ -530,146 +438,54 @@ Able to \emph{Listen}, \emph{Speak}, \emph{Read} and \emph{Write} English skillf
 
 %------------------------------------------------
 
-\workposition{Sep. 2014 -- June 2015} % Duration
-{} % FT/PT (full time or part time)
-{DSRC protocol stack and applications} % Employer
-{\textit{Developer}} % Job title
-{Participate in the development of \textit{IEEE 802.11p} protocol stack, and implements some applications such as collision warning on ARM development board. \textbf{Major developing language: C.}} % Description
-
-%------------------------------------------------
-
-\workposition{Sep. 2016 -- Now} % Duration
-{} % FT/PT (full time or part time)
-{IoT cloud} % Employer
-{\textit{Deputy Team Leader}} % Job title
-{Responsible for the management of teammates and project schedule, the development of authentication and authorization for servers, access for Amazon\faAmazon Alexa, searching services with Elasticsearch, and the deployment, operations and performance evaluations. \textbf{Major developing language: Node.js}.}  % Description
-
+%\workposition{Sep. 2014 -- June 2015} % Duration
+%{} % FT/PT (full time or part time)
+%{DSRC protocol stack and applications} % Employer
+%{\textit{Developer}} % Job title
+%{Participate in the development of \textit{IEEE 802.11p} protocol stack, and implements some applications such as collision warning on ARM development board. \textbf{Major developing language: C.}} % Description
 %------------------------------------------------
 
 \workposition{Oct. 2017 -- Now} % Duration
 {} % FT/PT (full time or part time)
-{LoRaWAN\texttrademark system} % Employer
-{\textit{Team Leader}} % Job title
-{Leading the team to design and implement the whole LoRaWAN\texttrademark system for IoT applications, including key algorithms such as Adaptive Data Rate (ADR) controls. As a team leader, I need to manage the whole project schedule, assign tasks to members and make summaries. Besides, I have to handle the technical problems and directions, making sure the project runs on the correct rail. I also need to control the documents, keeping it stick to the projects. I'm responsible for some development in this project. \textbf{Major developing language: Node.js}.} % Description
+{\textbf{LoRaWAN IoT system}} % Employer
+{\textit{Project Leader}} % Job title
+{\red{1.} Be in charge of project management, requirements analysis and features resolving. Leading the group to implement an LoRaWAN\texttrademark\\ system, including physical layer algorithms designs such as ADR.\\
+\red{2.} Architecture design. Design the distributed system architecture on my own.\\
+\red{3.} Solution design. Design on solution including repo structure and coding style. Review codes from group members.\\
+\red{4.} Develop on core modules. Develop independently both MAC-layer message parsing and encapsulating and device registration modules.\\
+\red{5.} Documentation. Design document style individually. Lead group to fulfill the document and revise.\\
+\red{6.} Functional test. Implement a LoRa device emulator and error data sending program in Python by myself, in order to test the function and vulnerability of system.\\
+\red{Major developing language:} Node.js, Python.\\
+\red{Product:} https://www.xisiot.com/
+} % Description
+\red{\par\noindent\rule{0.48\textwidth}{0.4pt}}
+%------------------------------------------------
 
+\workposition{Sep. 2016 -- Now} % Duration
+{} % FT/PT (full time or part time)
+{\textbf{IoT cloud}} % Employer
+{\textit{Deputy Project Leader}} % Job title
+{\red{1.} Take part in architecture design of IoT cloud and output a paper on \emph{IEEE Communications Magazine}.\\
+\red{2.} Design and implementation of security scheme of services, such as de/encryption, OAuth2.0 authentication and authorization and authority management.\\
+\red{3.} Integrate \faAmazon Amazon Alexa service by myself, including the voice design and API development. Distributed skills: MHaSa.\\
+\red{4.} Deploy Elasticsearch and develop API independently for IoT cloud. Use Python for data cleaning, data initializing and service monitoring.\\
+\red{5.} Take part in deployment, maintenance, functional test and performance evaluation.\\
+\red{Major developing language:} Node.js, Python.}  % Description
+\red{\par\noindent\rule{0.48\textwidth}{0.4pt}}
 %------------------------------------------------
 
 \workposition{Sep. 2015 -- Now} % Duration
 {} % FT/PT (full time or part time)
-{Research on Vehicular Networks} % Employer
-{\textit{Individual}} % Job title
-{My doctoral research throughout my Ph.D. By using convex optimization, data analyze, machine learning, etc. I tried to study the resource management issues in cloud based IoV. During the study, I've taken part in several NSFC or horizontal projects. \textbf{Major researching language: Python, major tools: IPython, TensorFlow, etc.}} % Description
-
-\vspace{-\baselineskip}\medskip % Standardise the whitespace after this section and before the next (the custom command adds too much otherwise)
-
-
-% Blank \educationentry{} command to add another degree:
-
-%\educationentry{} % Duration
-%{} % Degree
-%{} % Honours, achievements or distinctions (e.g. first class honours)
-%{} % Department
-%{} % Institution
-
-% All 5 parameters must be supplied but any can be empty if you don't need them
-
-%------------------------------------------------
-
-
-
-%----------------------------------------------------------------------------------------
-%	COMPUTER SKILLS
-%----------------------------------------------------------------------------------------
-
-\section{Programming Skills} 
-
-% Example \tableentry{} command to add another line:
-
-%\tableentry{Heading}{Content}{spaceafter}
-
-% All 3 parameters must be supplied but any can be empty if you don't need them
-% A "spaceafter" value in the third parameter will add some vertical space -- this is to be used between headings
-
-%------------------------------------------------
-
-\begin{supertabular}{rl} % Start a table with two columns, the table will ensure everything is aligned
-	
-	\tableentry{Expert}{Python\includegraphics*[width=0.019\textwidth]{python.png}, Node.js\includegraphics*[width=0.019\textwidth]{nodejs.png}}{spaceafter}
-
-	%------------------------------------------------
-	
-	\tableentry{Intermediate}{C, \CPP, MATLAB, \LaTeX, SQL}{}
-	\tableentry{}{shell, HTML, Javascript, CSS}{spaceafter}
-	
-	%------------------------------------------------
-	
-	\tableentry{Beginner}{Go, Rust, lisp, Java}{spaceafter}
-	
-	%------------------------------------------------
-	
-\end{supertabular}
-
-\section{Computer Skills}
-%----------------------------------------------------------------------------------------
-%	COMMUNICATION SKILLS
-%----------------------------------------------------------------------------------------
-	\begin{supertabular}{rl} % Start a table with two columns, the table will ensure everything is aligned
-	
-	%------------------------------------------------
-	
-	\tableentry{Expert}{Microsoft Office, Git, reStructuredText,}{}
-	\tableentry{}{Markdown, Linux, vim,}{}
-	\tableentry{}{HTTP, MQTT, kafka,}{}
-	\tableentry{}{ProtocolBuffer, gRPC, TLS, Locust,}{}
-	\tableentry{}{Github, StackOverflow, Readthedocs}{}
-	\tableentry{}{...}{spaceafter}
-	%------------------------------------------------
-	
-	\tableentry{Intermediate}{Elasticsearch, Nginx, HAProxy, Redis,}{}
-	\tableentry{}{MySQL, MongoDB, }{}
-	\tableentry{}{...}{spaceafter}
-	%------------------------------------------------
-	
-	%------------------------------------------------
-	
-\end{supertabular}
-
-% Example \tableentry{} command to add another line:
-
-%\tableentry{Heading}{Content}{spaceafter}
-
-% All 3 parameters must be supplied but any can be empty if you don't need them
-% A "spaceafter" value in the third parameter will add some vertical space -- this is to be used between headings
-
-%------------------------------------------------
-
-%----------------------------------------------------------------------------------------
-%	SKILLS DESCRIPTION
-%----------------------------------------------------------------------------------------
-
-\section{Working Skills}
-
-% Example \longformdescription{} command to add another section:
-
-%\longformdescription{Heading}{Description}
-
-%------------------------------------------------
-
-\longformdescription{Design on service architecture}{Has knowledge on architecture design and practical experience.}
-
-\longformdescription{Developing ability with Python}{Strong ability of Python developing. Running an open techblog on WeChat.}
-
-\longformdescription{Machine learning}{Has knowledge on algorithms of machine learning.}
-
-\longformdescription{Research}{Has the ability of doing researches. Good at discovering and solving problems.}
-
-\longformdescription{Leadership}{Has the ability of leaders.}
-
-\longformdescription{Writing}{Very strong ability of writing documents, reports, records and PPTs.}
-%----------------------------------------------------------------------------------------
-%	PUBLICATIONS
-%----------------------------------------------------------------------------------------
+{\textbf{Vehicular Networks}} % Employer
+{\textit{Individual Research}} % Job title
+{Title of doctoral dissertation: \raggedright\textbf{``Research on Resource Management and Optimization of Mobile Cloud Networks for Internet of Vehicles" from \textit{The National Natural Science Foundation of China}}. By using convex optimization, data analyze, machine learning, etc, I tried to study the management strategies of computing, communication and storage resources in cloud based IoV. During the study, I've taken part in several NSFC or horizontal projects. \\
+\red{Major algorithms:} dynamic programming, machine learning.\\
+\red{Major researching language:} Python.\\
+\red{Major tools:} IPython, TensorFlow, etc.
+} % Description
 \switchcolumn
+\onecolumn
+
 \section{Publications}
 \begin{enumerate}[font=\color{headings}\bfseries]
 	
@@ -681,7 +497,7 @@ Able to \emph{Listen}, \emph{Speak}, \emph{Read} and \emph{Write} English skillf
 	
 	\item \longformpublication{\textbf{Lu Hou}, Lei Lei, Kan Zheng, ``Design on publish/subscribe message dissemination for vehicular networks with mobile edge computing,'' \textit{2017 IEEE GLOBECOM}, Dec. 2017}
 	
-	\item \longformpublication{\textbf{Lu Hou}, Lei Lei, Kan Zheng, Xianbin Wang, ``A Q-learning based Proactive Caching Strategy for Non-safety Related Services in Vehicular Networks,'' \textit{IEEE Internet of Things Journal}, \textbf{Under review}}
+	\item \longformpublication{\textbf{Lu Hou}, Lei Lei, Kan Zheng, Xianbin Wang, ``A Q-learning based Proactive Caching Strategy for Non-safety Related Services in Vehicular Networks,'' \textit{IEEE Internet of Things Journal}, \textbf{Revised}}
 
 	\item \longformpublication{Kan Zheng, \textbf{Lu Hou}, Hanling Meng, Qiang Zheng, Ning Lu, Lei Lei, ``Soft-defined heterogeneous vehicular network: architecture and challenges,'' \textit{IEEE Network}, vol. 30, no. 4, July 2016, pp. 72-80.\IF{7.23}}
 	
@@ -689,29 +505,19 @@ Able to \emph{Listen}, \emph{Speak}, \emph{Read} and \emph{Write} English skillf
 	
 	\item \longformpublication{Xiong Xiong, \textbf{Lu Hou}, Long Zhao, ``A Group-Based Massive Multiple Access Scheme in Cellular M2M Networks,'' \textit{Computer Communications}, vol. 121, May. 2018, pp. 44-49. \IF{3.338}}
 \end{enumerate}
-% Example \longformdescription{} command to add another publication:
+\vspace*{450 pt}
+\footnoterule
+%\footnotetext{
+This template originates from:
+\hyperlink{[http://www.LaTeXTemplates.com]}{http://www.LaTeXTemplates.com}
 
-%\longformpublication{Reference (format this manually as desired)}
+Authors:
+Vel \hyperlink{mailto:vel@LaTeXTemplates.com}{vel@LaTeXTemplates.com} \& Alessandro Plasmati
 
-%------------------------------------------------
+License:
+CC BY-NC-SA 3.0 (\hyperlink{[http://creativecommons.org/licenses/by-nc-sa/3.0/]}{http://creativecommons.org/licenses/by-nc-sa/3.0/})
 
-%------------------------------------------------
-
-% As an alternative to a long-form publication list, you can create a shorter summary using only DOI values and years.
-
-% Example \doipublication{} command to add another publication:
-
-%\doipublication{Year}{DOI}{firstauthor}{spaceafter}
-
-% All four parameters are required (can be empty though)
-% A value of "firstauthor" in the third parameter will print the DOI in bold
-% A "spaceafter" value in the fourth parameter will add some vertical space -- this is to be used between years
-
-%------------------------------------------------
-
-\medskip % Extra whitespace before the next section
-
-%----------------------------------------------------------------------------------------
+It has been modified to fit this resume.
 
 \end{paracol}
 
